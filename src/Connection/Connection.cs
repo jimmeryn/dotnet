@@ -12,6 +12,7 @@ namespace WorkHoursTracker
   {
     private OracleConnection connection;
 
+
     public Connection()
     {
       Connect();
@@ -22,7 +23,13 @@ namespace WorkHoursTracker
     private void Connect()
     {
       connection = new OracleConnection();
-      connection.ConnectionString = "User Id=test;Password=test;Data Source=localhost:1521/xe";
+      string[] connectionStringLines = System.IO.File.ReadAllLines(@".\connection.txt");
+      string Id = connectionStringLines[0];
+      string Password = connectionStringLines[1];
+      string Host = connectionStringLines[2];
+      string Port = connectionStringLines[3];
+      string ServiceName = connectionStringLines[4];
+      connection.ConnectionString = "User Id=" + Id + ";Password=" + Password + ";Data Source=" + Host + ":" + Port + "/" + ServiceName;
       try
       {
         if (connection.State == ConnectionState.Closed)
@@ -30,6 +37,7 @@ namespace WorkHoursTracker
           connection.Open();
           Console.WriteLine("Connected to Oaracle: " + connection.ServerVersion);
           Console.WriteLine("State: " + connection.State);
+
         }
       }
       catch (Exception ex)
@@ -52,6 +60,11 @@ namespace WorkHoursTracker
     {
       connection.Close();
       connection.Dispose();
+    }
+
+    public bool LoginValidation()
+    {
+      return true;
     }
 
     ~Connection()
