@@ -27,7 +27,9 @@ Create file connection.txt with the following content:
 ```sh
 DATABASE ID
 DATABASE PASSWORD
-DATABASE SOURCE eg. localhost:1521/xe
+HOST eg. localhost
+PORT eg. 1521
+SERVICE_NAME eg. xe
 ```
 
 ### Run application
