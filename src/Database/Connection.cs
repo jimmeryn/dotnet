@@ -62,25 +62,24 @@ namespace WorkHoursTracker
       connection.Dispose();
     }
 
-    public bool LoginValidation()
-    {
-      return true;
-    }
+    // TODO
+    // public bool LoginValidation()
+    // {
+    //   using (var db = new DataBaseContext())
+    //   {
+    //     var user = db.employees;
+
+    //     var pracownik = new Employee { Name = "jon", Surname = "Smith", JobTitle = "Worker" };
+    //     db.employees.Add(pracownik);
+    //     db.SaveChanges();
+    //   }
+    //   return true;
+    // }
 
     ~Connection()
     {
       connection.Close();
       connection.Dispose();
-    }
-
-    /// <summary>
-    /// Method to read data from oracle db
-    /// </summary>
-    public void ReadData()
-    {
-      Console.WriteLine("ReadingDataFromDataBase!");
-      // jakies zapytania do oracle db w stylu From * Table ...
-      Console.WriteLine("ENDEDReadingDataFromDataBase!");
     }
   }
 }
