@@ -9,7 +9,7 @@ namespace WorkHoursTracker.Data
     public static void Initialize(DataBaseContext context)
     {
       context.Database.EnsureCreated();
-      if (context.employees.Any())
+      if (context.Employees.Any())
       {
         return;
       }
@@ -19,7 +19,7 @@ namespace WorkHoursTracker.Data
         var Employees = new Employee[] { new Employee { Name = "Jonh", Surname = "Smith", JobTitle = "Worker" } };
         foreach (Employee employee in Employees)
         {
-          context.employees.Add(employee);
+          context.Employees.Add(employee);
         }
         context.SaveChanges();
       }

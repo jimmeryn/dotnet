@@ -8,12 +8,8 @@ namespace WorkHoursTracker
 {
   public class DataBaseContext : DbContext
   {
-    public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options)
-    {
-
-    }
-    public DbSet<Employee> employees { get; set; }
-    public DbSet<Time> times { get; set; }
+    public DbSet<Employee> Employees { get; set; }
+    public DbSet<Time> Times { get; set; }
 
     public Connection connection = new Connection();
 
