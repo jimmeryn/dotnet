@@ -22,7 +22,13 @@ Make sure you've installed dotnet and that you have Oracle Explorer connected to
 
 ### Connect to database
 
-In file ./src/Connection/Connection.cs change connection string artibutes to your own Id, password and source
+Create file connection.txt with the following content:
+
+```sh
+DATABASE ID
+DATABASE PASSWORD
+DATABASE SOURCE eg. localhost:1521/xe
+```
 
 ### Run application
 
