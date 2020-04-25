@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 
 using WorkHoursTracker.Models;
+using WorkHoursTracker.Data;
 
 namespace WorkHoursTracker
 {
@@ -17,10 +18,10 @@ namespace WorkHoursTracker
   {
     public App()
     {
-      Connection connection = new Connection();
-      // connection.ReadData();
-      Time time = new Time();
-      Employee employee = new Employee();
+      using (var context = new DataBaseContext())
+      {
+        // DbInitializer.Initialize(context);
+      }
     }
   }
 }
