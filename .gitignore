@@ -1,7 +1,11 @@
 .vscode 
-
+.vs
 obj/
-
 bin/
 
+# Connection data
 connection.txt
+
+# Documentation generator
+log.txt
+doc/
