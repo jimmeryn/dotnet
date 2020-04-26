@@ -37,3 +37,15 @@ SERVICE_NAME eg. xe
 ```sh
 dotnet run
 ```
+
+### Adding migrations
+
+```sh
+dotnet ef migrations add <migratin_name>
+```
+
+### Run unitests
+
+```sh
+dotnet test
+```
