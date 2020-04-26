@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.Data
+  commentId: N:WorkHoursTracker.Data
+  id: WorkHoursTracker.Data
+  children:
+  - WorkHoursTracker.Data.DbInitializer
+  langs:
+  - csharp
+  - vb
+  name: WorkHoursTracker.Data
+  nameWithType: WorkHoursTracker.Data
+  fullName: WorkHoursTracker.Data
+  type: Namespace
+  assemblies:
+  - WorkHoursTracker
+references:
+- uid: WorkHoursTracker.Data.DbInitializer
+  commentId: T:WorkHoursTracker.Data.DbInitializer
+  name: DbInitializer
+  nameWithType: DbInitializer
+  fullName: WorkHoursTracker.Data.DbInitializer
