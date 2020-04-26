@@ -12,7 +12,9 @@ namespace WorkHoursTracker
   {
     private OracleConnection connection;
 
-
+    /// <summary>
+    /// Constructor establishing connection
+    /// </summary>
     public Connection()
     {
       Connect();
@@ -76,6 +78,9 @@ namespace WorkHoursTracker
     //   return true;
     // }
 
+    /// <summary>
+    /// Destructor. Close connection with database
+    /// </summary>
     ~Connection()
     {
       connection.Close();

@@ -16,11 +16,14 @@ namespace WorkHoursTracker
   /// </summary>
   public partial class App : Application
   {
+    /// <summary>
+    /// App constructor
+    /// </summary>
     public App()
     {
       using (var context = new DataBaseContext())
       {
-        // DbInitializer.Initialize(context);
+        DbInitializer.Initialize(context);
       }
     }
   }

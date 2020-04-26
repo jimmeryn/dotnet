@@ -4,8 +4,14 @@ using System.Linq;
 
 namespace WorkHoursTracker.Data
 {
+  /// <summary>
+  /// Initialize database class
+  /// </summary>
   public static class DbInitializer
   {
+    /// <summary>
+    /// Used to initialize database
+    /// </summary>
     public static void Initialize(DataBaseContext context)
     {
       context.Database.EnsureCreated();

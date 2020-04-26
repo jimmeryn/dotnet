@@ -20,6 +20,9 @@ namespace WorkHoursTracker
   /// </summary>
   public partial class MainWindow : Window
   {
+    /// <summary>
+    /// Constructor initializing main window component 
+    /// </summary>
     public MainWindow()
     {
       InitializeComponent();
