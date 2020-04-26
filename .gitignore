@@ -6,6 +6,5 @@ bin/
 # Connection data
 connection.txt
 
-# Documentation generator
+# Documentation generator log
 log.txt
-doc/
