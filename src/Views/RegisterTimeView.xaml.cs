@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace WorkHoursTracker.Views
 {
@@ -23,6 +24,20 @@ namespace WorkHoursTracker.Views
     public RegisterTimeView()
     {
       InitializeComponent();
+      StartClock();
+    }
+
+    private void StartClock()
+    {
+      DispatcherTimer timer = new DispatcherTimer();
+      timer.Interval = TimeSpan.FromSeconds(1);
+      timer.Tick += tickevent;
+      timer.Start();
+    }
+
+    private void tickevent(object sender, EventArgs e)
+    {
+      datalbl.Text = DateTime.Now.ToString();
     }
   }
 }

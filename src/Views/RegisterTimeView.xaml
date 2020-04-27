@@ -6,8 +6,27 @@
              xmlns:local="clr-namespace:WorkHoursTracker.Views"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="Button" x:Key="Menu">
+          <Setter Property="Height" Value="50" />
+          <Setter Property="Width" Value="200" />
+          <Setter Property="Background" Value="#FF34268A" />
+          <Setter Property="Foreground" Value="White" />
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="Button">
+                <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderThickness="2" BorderBrush="#061162">
+                  <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+              </ControlTemplate >
+            </Setter.Value>
+          </Setter>
+        </Style>
+    </UserControl.Resources>
     <Grid Background="WhiteSmoke">
-    <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Register Time" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
-            
+    <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Current Date and Time:" VerticalAlignment="Top" Height="50" Width="300" TextAlignment="Center" FontSize="25"/>
+    <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" Name="datalbl" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
+     <Button Content="Start Working" Style="{StaticResource Menu}" Margin="10, 50, 10, 10"/>
+     <Button Content="Stop Working" Style="{StaticResource Menu}" Margin="10, 200, 10, 10"/>
     </Grid>
 </UserControl>
