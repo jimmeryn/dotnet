@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid Background="WhiteSmoke">
-        <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Stats" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Statistics" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
             
     </Grid>
 </UserControl>
