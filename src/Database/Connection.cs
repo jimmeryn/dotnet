@@ -37,8 +37,6 @@ namespace WorkHoursTracker
         if (connection.State == ConnectionState.Closed)
         {
           connection.Open();
-          Console.WriteLine("Connected to Oaracle: " + connection.ServerVersion);
-          Console.WriteLine("State: " + connection.State);
 
         }
       }
@@ -63,20 +61,6 @@ namespace WorkHoursTracker
       connection.Close();
       connection.Dispose();
     }
-
-    // TODO
-    // public bool LoginValidation()
-    // {
-    //   using (var db = new DataBaseContext())
-    //   {
-    //     var user = db.employees;
-
-    //     var pracownik = new Employee { Name = "jon", Surname = "Smith", JobTitle = "Worker" };
-    //     db.employees.Add(pracownik);
-    //     db.SaveChanges();
-    //   }
-    //   return true;
-    // }
 
     /// <summary>
     /// Destructor. Close connection with database
