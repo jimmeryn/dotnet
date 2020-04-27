@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:WorkHoursTracker.Views"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Background="Black">
+    <Grid Background="WhiteSmoke">
+        <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Welcome Back!" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
             
     </Grid>
 </UserControl>

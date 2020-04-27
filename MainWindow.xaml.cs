@@ -39,6 +39,5 @@ namespace WorkHoursTracker
       else
         MessageBox.Show("Cannot login as " + EmployeeName.Text + " " + EmployeeSurname.Text);
     }
-
   }
 }

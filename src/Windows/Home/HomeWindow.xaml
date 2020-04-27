@@ -18,6 +18,38 @@
         <DataTemplate x:Name="statsViewTemplate" DataType="{x:Type viewmodels:StatsViewModel}">
             <views:StatsView DataContext="{Binding}"/>
         </DataTemplate>
+
+        <Style TargetType="Button" x:Key="Menu">
+          <Setter Property="Height" Value="30" />
+          <Setter Property="Background" Value="White" />
+          <Setter Property="Foreground" Value="Black" />
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="Button">
+                <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderThickness="2" BorderBrush="WhiteSmoke">
+                  <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+              </ControlTemplate >
+            </Setter.Value>
+          </Setter>
+        </Style>
+
+        <Style TargetType="Button" x:Key="Nav">
+          <Setter Property="Height" Value="20" />
+          <Setter Property="Width" Value="70" />
+          <Setter Property="VerticalAlignment" Value="Center" />
+          <Setter Property="Background" Value="White" />
+          <Setter Property="Foreground" Value="Black" />
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="Button">
+                <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderThickness="2" BorderBrush="WhiteSmoke">
+                  <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+              </ControlTemplate >
+            </Setter.Value>
+          </Setter>
+        </Style>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
@@ -32,21 +64,25 @@
         </Grid.RowDefinitions>
         <Rectangle HorizontalAlignment="Center" Height="30" VerticalAlignment="Center" Width="800" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
             <Rectangle.Fill>
-                <SolidColorBrush Color="Gray" />
+                 <LinearGradientBrush>
+                    <GradientStop Color="#FF34268A" Offset="0.0"/>
+                    <GradientStop Color="#061162" Offset="1"/>
+                </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button Content="Log Out" HorizontalAlignment="Left" Margin="480,0,0,0" VerticalAlignment="Center" Width="50" Height="20" Grid.Column="1" Click="LogOutButtonClicked"/>
+        <Button Content="Log Out" Style="{StaticResource Nav}" HorizontalAlignment="Left" Margin="480,0,0,0" Grid.Column="1" Click="LogOutButtonClicked"/>
+        <TextBlock Margin="10,0,0,0" Text="Work Hours Tracker" HorizontalAlignment="Right" Height="50" Width="200" TextAlignment="Center" FontSize="23" Foreground="WhiteSmoke" />
 
         <DockPanel Grid.Row="1" Grid.Column="0" Grid.RowSpan="3">
             <DockPanel.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#FF2281D1" Offset="0.0"/>
+                    <GradientStop Color="#061162" Offset="0.0"/>
                     <GradientStop Color="#FF34268A" Offset="1"/>
                 </LinearGradientBrush>
             </DockPanel.Background>
             <StackPanel>
-                <Button Content="Register Work Time" Click="RegisterTimeView_Clicked" Height="30" Margin="10, 10, 10, 10"/>
-                <Button Content="View Stats" Click="StatsView_Clicked" Height="30" Margin="10, 0, 10, 10"/>
+                <Button Content="Register Work Time" Click="RegisterTimeViewButtonClicked" Style="{StaticResource Menu}" Margin="10, 10, 10, 10"/>
+                <Button Content="View Stats" Click="StatsViewButtonClicked" Style="{StaticResource Menu}" Margin="10, 0, 10, 10"/>
             </StackPanel>
         </DockPanel>
         <ContentControl Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Grid.RowSpan="5" Content="{Binding}"/>

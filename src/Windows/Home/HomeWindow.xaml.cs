@@ -38,12 +38,12 @@ namespace WorkHoursTracker
       this.Close();
     }
 
-    private void RegisterTimeView_Clicked(object sender, RoutedEventArgs e)
+    private void RegisterTimeViewButtonClicked(object sender, RoutedEventArgs e)
     {
       DataContext = new RegisterTimeViewModel();
     }
 
-    private void StatsView_Clicked(object sender, RoutedEventArgs e)
+    private void StatsViewButtonClicked(object sender, RoutedEventArgs e)
     {
       DataContext = new StatsViewModel();
     }

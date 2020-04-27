@@ -19,12 +19,28 @@
         xmlns:local="clr-namespace:WorkHoursTracker"
         mc:Ignorable="d"
         Title="WorkHoursTracker" Height="400" Width="400">
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="Login">
+          <Setter Property="Height" Value="30" />
+          <Setter Property="Background" Value="White" />
+          <Setter Property="Foreground" Value="Black" />
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="Button">
+                <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderThickness="2" BorderBrush="WhiteSmoke">
+                  <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Border>
+              </ControlTemplate >
+            </Setter.Value>
+          </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
 
         <Border Grid.RowSpan="2">
             <Border.Background>
                 <LinearGradientBrush>
-                    <GradientStop Color="#FF2281D1" Offset="0.0"/>
+                    <GradientStop Color="#061162" Offset="0.0"/>
                     <GradientStop Color="#FF34268A" Offset="1"/>
                 </LinearGradientBrush>
             </Border.Background>
@@ -32,7 +48,7 @@
 
         <TextBox Name="EmployeeName" HorizontalAlignment="Center" Margin="0,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Height="30"/>
         <TextBox Name="EmployeeSurname" HorizontalAlignment="Center" Margin="0,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240" Height="30"/>
-        <Button Content="Log In" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="160" Height="35" Click="LogInButtonClicked"/>
+        <Button Content="Log In" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" Width="160" Height="35" Click="LogInButtonClicked" Style="{StaticResource Login}"/>
         <TextBlock HorizontalAlignment="Left" Margin="80,170,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
         <TextBlock HorizontalAlignment="Left" Margin="80,220,0,0" Text="Surname" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="WhiteSmoke"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Welcome" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="35" Foreground="WhiteSmoke" />
