@@ -22,14 +22,23 @@ namespace WorkHoursTracker
   {
     /// <summary>
     /// Constructor initializing main window component 
-    /// </summary>
+    /// </summary> 
     public MainWindow()
     {
       InitializeComponent();
     }
-    private void Button_Click(object sender, RoutedEventArgs e)
+
+    public void LogInButtonClicked(object sender, RoutedEventArgs e)
     {
-      MessageBox.Show("Succesfuly loged in as " + EmployeeName.Text + " " + EmployeeSurname.Text);
+      if (EmployeeValidation.Validate(EmployeeName.Text, EmployeeSurname.Text) || true /* FOR DEVELOPMENT*/)
+      {
+        HomeWindow window = new HomeWindow();
+        window.Show();
+        this.Close();
+      }
+      else
+        MessageBox.Show("Cannot login as " + EmployeeName.Text + " " + EmployeeSurname.Text);
     }
+
   }
 }
