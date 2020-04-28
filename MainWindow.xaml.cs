@@ -28,6 +28,9 @@ namespace WorkHoursTracker
       InitializeComponent();
     }
 
+    /// <summary>
+    /// Validate user data after clicking log in button and if succeded open home window
+    /// </summary> 
     public void LogInButtonClicked(object sender, RoutedEventArgs e)
     {
       if (EmployeeValidation.Validate(EmployeeName.Text, EmployeeSurname.Text) || true /* FOR DEVELOPMENT*/)
@@ -38,6 +41,16 @@ namespace WorkHoursTracker
       }
       else
         MessageBox.Show("Cannot login as " + EmployeeName.Text + " " + EmployeeSurname.Text);
+    }
+
+    /// <summary>
+    /// Open sing up window after clicking sing up button
+    /// </summary> 
+    public void SingUpButtonClicked(object sender, RoutedEventArgs e)
+    {
+      SingUpWindow window = new SingUpWindow();
+      window.Show();
+      this.Close();
     }
   }
 }
