@@ -48,5 +48,10 @@ namespace WorkHoursTracker
       DataContext = new StatsViewModel();
     }
 
+    private void ExitButtonClicked(object sender, RoutedEventArgs e)
+    {
+      this.Close();
+    }
+
   }
 }
