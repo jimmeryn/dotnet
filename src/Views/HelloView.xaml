@@ -4,22 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WorkHoursTracker.Views"
+             xmlns:models="clr-namespace:WorkHoursTracker.DataModels"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type models:DataModelObject}">
+        </DataTemplate>
+    </UserControl.Resources>
     <Grid Background="LightGray">
         <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Welcome Back!" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
         
         <Rectangle HorizontalAlignment="Left" Margin="20,100,0,0" Height="30" Width="250" Fill="White" VerticalAlignment="Top" />
         <TextBlock HorizontalAlignment="Left" Margin="30,100,0,0" Text="Name: " VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="120,100,0,0" Text="John" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="UserDataName" Text="{Binding Name}" Margin="120,100,0,0" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
 
         <Rectangle HorizontalAlignment="Left" Margin="20,150,0,0" Height="30" Width="250" Fill="White" VerticalAlignment="Top" />        
         <TextBlock HorizontalAlignment="Left" Margin="30,150,0,0" Text="Surname: " VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="120,150,0,0" Text="Smith" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="UserDataSurname" Text="{Binding Surname}"  Margin="120,150,0,0" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
         
         <Rectangle HorizontalAlignment="Left" Margin="20,200,0,0" Height="30" Width="250" Fill="White" VerticalAlignment="Top" />
         <TextBlock HorizontalAlignment="Left" Margin="30,200,0,0" Text="JobTitle: " VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="120,200,0,0" Text="Worker" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" x:Name="UserDataJobTitle" Margin="120,200,0,0" Text="{Binding JobTitle}" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Left" FontSize="18"/>
             
             
     </Grid>

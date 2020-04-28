@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using WorkHoursTracker.ViewModels;
+using WorkHoursTracker.DataModels;
 
 namespace WorkHoursTracker
 {
@@ -29,6 +30,8 @@ namespace WorkHoursTracker
     {
       InitializeComponent();
       DataContext = new HelloViewModel();
+      DataModelObject FullNameContext = new DataModelObject() { FullName = ((App)Application.Current).Name + ((App)Application.Current).Surname };
+      LoggedAs.DataContext = FullNameContext;
     }
 
     public void LogOutButtonClicked(object sender, RoutedEventArgs e)

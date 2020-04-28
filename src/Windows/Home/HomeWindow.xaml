@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkHoursTracker"
         xmlns:viewmodels="clr-namespace:WorkHoursTracker.ViewModels"
+        xmlns:models="clr-namespace:WorkHoursTracker.DataModels"
         xmlns:views="clr-namespace:WorkHoursTracker.Views"
         mc:Ignorable="d"
         Title="WorkHoursTracker" Height="400" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True">
@@ -17,6 +18,8 @@
         </DataTemplate>
         <DataTemplate x:Name="statsViewTemplate" DataType="{x:Type viewmodels:StatsViewModel}">
             <views:StatsView DataContext="{Binding}"/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type models:DataModelObject}">
         </DataTemplate>
 
         <Style TargetType="Button" x:Key="Menu">
@@ -73,8 +76,7 @@
         <Button Content="Log Out" Style="{StaticResource Nav}" HorizontalAlignment="Left" Margin="450,0,0,0" Grid.Column="1" Click="LogOutButtonClicked"/>
         <Button Content="X" Style="{StaticResource Nav}" HorizontalAlignment="Left" Margin="536,0,0,0"  Grid.Column="1" Width="25" Click="ExitButtonClicked"/>
         <TextBlock Margin="10,0,0,0" Text="Work Hours Tracker" HorizontalAlignment="Right" Height="50" Width="200" TextAlignment="Center" FontSize="23" Foreground="WhiteSmoke" />
-        <TextBlock Margin="270,0,0,90" Text="John Smith" HorizontalAlignment="Left" Height="30" Width="200" TextAlignment="Center" FontSize="18" Foreground="WhiteSmoke" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" />
-
+        <TextBlock Margin="270,0,0,90" x:Name="LoggedAs" Text="{Binding FullName}" HorizontalAlignment="Left" Height="30" Width="200" TextAlignment="Center" FontSize="18" Foreground="WhiteSmoke" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" />
 
         <DockPanel Grid.Row="1" Grid.Column="0" Grid.RowSpan="3">
             <DockPanel.Background>

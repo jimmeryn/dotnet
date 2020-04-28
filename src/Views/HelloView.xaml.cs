@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Windows;
 using System.Windows.Controls;
+using WorkHoursTracker.DataModels;
 
 namespace WorkHoursTracker.Views
 {
@@ -11,6 +13,10 @@ namespace WorkHoursTracker.Views
     public HelloView()
     {
       InitializeComponent();
+      DataModelObject FullNameContext = new DataModelObject() { Name = ((App)Application.Current).Name, Surname = ((App)Application.Current).Surname, JobTitle = "Worker" };
+      UserDataName.DataContext = FullNameContext;
+      UserDataSurname.DataContext = FullNameContext;
+      UserDataJobTitle.DataContext = FullNameContext;
     }
   }
 }

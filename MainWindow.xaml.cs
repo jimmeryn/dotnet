@@ -38,6 +38,8 @@ namespace WorkHoursTracker
         HomeWindow window = new HomeWindow();
         window.Show();
         this.Close();
+        ((App)Application.Current).Name = EmployeeName.Text;
+        ((App)Application.Current).Surname = EmployeeSurname.Text;
       }
       else
         MessageBox.Show("Cannot login as " + EmployeeName.Text + " " + EmployeeSurname.Text);
