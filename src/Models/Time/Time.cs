@@ -18,6 +18,7 @@ namespace WorkHoursTracker.Models
     public int EmployeeId { get; set; }
 
     ///<value> Employee asociated with time </value>
+    [NotMapped]
     public virtual Employee Employee { get; set; }
 
     ///<value> Time of work start </value>
