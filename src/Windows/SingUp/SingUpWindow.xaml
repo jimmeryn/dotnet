@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WorkHoursTracker"
         mc:Ignorable="d"
-        Title="WorkHoursTracker" Height="400" Width="400" Background="Black">
+        Title="WorkHoursTracker" Height="400" Width="400" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent">
     <Window.Resources>
         <Style TargetType="Button" x:Key="Login">
             <Setter Property="Height" Value="30" />
@@ -34,7 +34,7 @@
             <RowDefinition Height="20*"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.RowSpan="3" Grid.ColumnSpan="3" >
+        <Border Grid.RowSpan="3" Grid.ColumnSpan="3" CornerRadius="10">
             <Border.Background>
                 <LinearGradientBrush>
                     <GradientStop Color="#061162" Offset="0.0"/>

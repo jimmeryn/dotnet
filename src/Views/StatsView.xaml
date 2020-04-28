@@ -6,8 +6,45 @@
              xmlns:local="clr-namespace:WorkHoursTracker.Views"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid Background="WhiteSmoke">
-        <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Statistics" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
-            
-    </Grid>
+            <Grid Background="LightGray">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100*"/>
+                    <ColumnDefinition Width="100*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="20*"/>
+                    <RowDefinition Height="50*"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="230" Grid.Row="1">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#061162" Offset="0.0"/>
+                            <GradientStop Color="#FF34268A" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Rectangle HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="230" Grid.Column="1" Grid.Row="1">
+                    <Rectangle.Fill>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#061162" Offset="0.0"/>
+                            <GradientStop Color="#FF34268A" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+              
+                <Rectangle HorizontalAlignment="Left" Height="40" Margin="40,0,0,0" Fill="White" VerticalAlignment="Center" Width="40" Grid.Row="1"/>
+                <Rectangle HorizontalAlignment="Left" Height="40" Margin="40,0,0,0" Fill="White" VerticalAlignment="Center" Width="40" Grid.Column="1" Grid.Row="1"/>
+               
+                <Label Content="This week" FontSize="18" HorizontalAlignment="Left" Foreground="White" Margin="80,15,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+                <Label Content="This month" FontSize="18" HorizontalAlignment="Left" Foreground="White" Margin="80,15,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Grid.Row="1"/>
+              
+                <TextBlock HorizontalAlignment="Left" FontSize="18" Foreground="White" Margin="85,40,0,0" Text="5:56:00 h" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Grid.Row="1"/>
+                <TextBlock HorizontalAlignment="Left" FontSize="18" Foreground="White" Margin="85,40,0,0" Text="32:56:00 h" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Grid.Column="1" Grid.Row="1"/>
+
+                <Label HorizontalAlignment="Left" Margin="40,7,0,0" Content="Dashboard" FontSize="20" VerticalAlignment="Top"/>
+               
+                <Rectangle HorizontalAlignment="Left" Height="155" Width="500" Margin="30,0,0,0" Grid.Row="2" Fill="White" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+            </Grid>
 </UserControl>

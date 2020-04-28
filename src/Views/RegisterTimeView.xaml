@@ -23,10 +23,13 @@
           </Setter>
         </Style>
     </UserControl.Resources>
-    <Grid Background="WhiteSmoke">
-    <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Current Date and Time:" VerticalAlignment="Top" Height="50" Width="300" TextAlignment="Center" FontSize="25"/>
-    <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" Name="datalbl" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
-     <Button Content="Start Working" Style="{StaticResource Menu}" Margin="10, 50, 10, 10"/>
-     <Button Content="Stop Working" Style="{StaticResource Menu}" Margin="10, 200, 10, 10"/>
+    <Grid Background="LightGray">
+      <Rectangle HorizontalAlignment="Center" Height="300" Width="300"  Fill="White" VerticalAlignment="Center" />
+
+      <TextBlock HorizontalAlignment="Center" Margin="0,50,0,0" Text="Current Date and Time:" VerticalAlignment="Top" Height="50" Width="300" TextAlignment="Center" FontSize="25"/>
+      <TextBlock HorizontalAlignment="Center" Margin="0,100,0,0" Name="datalbl" VerticalAlignment="Top" Height="50" Width="240" TextAlignment="Center" FontSize="25"/>
+      
+      <Button Content="Start Working" Style="{StaticResource Menu}" Margin="10, 50, 10, 10"/>
+      <Button Content="Stop Working" Style="{StaticResource Menu}" Margin="10, 200, 10, 10"/>
     </Grid>
 </UserControl>
