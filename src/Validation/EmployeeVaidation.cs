@@ -16,7 +16,7 @@ namespace WorkHoursTracker
     /// </summary>
     public static bool Validate(string name, string surname)
     {
-      StringValidator stringValidator = new StringValidator(2, 20, @"^[a-zA-Z]+$");
+      StringValidator stringValidator = new StringValidator(2, 20);
       try
       {
         stringValidator.Validate(name);

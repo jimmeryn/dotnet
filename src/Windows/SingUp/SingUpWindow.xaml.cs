@@ -48,11 +48,14 @@ namespace WorkHoursTracker
     {
       if (EmployeeValidation.NewValidate(EmployeeName.Text, EmployeeSurname.Text, EmployeeJobTitle.Text))
       {
-        Console.WriteLine("Sing Up!" + EmployeeName.Text + EmployeeSurname.Text + EmployeeJobTitle.Text);
+        MessageBox.Show("Singed Up as: " + EmployeeName.Text + " " + EmployeeSurname.Text + " " + EmployeeJobTitle.Text);
         AddNewEmployee(EmployeeName.Text, EmployeeSurname.Text, EmployeeJobTitle.Text);
+        MainWindow window = new MainWindow();
+        window.Show();
+        this.Close();
       }
       else
-        MessageBox.Show("Could not sing up");
+        MessageBox.Show("Could not sing up. Invalid data");
     }
 
     ///<summary>
