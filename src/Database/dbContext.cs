@@ -25,8 +25,10 @@ namespace WorkHoursTracker
     /// </summary>
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-      modelBuilder.Entity<Employee>().ToTable("Employee");
-      modelBuilder.Entity<Time>().ToTable("Time");
+      modelBuilder.Entity<Time>()
+        .HasOne(time => time.Employee)
+        .WithMany(employee => employee.Times)
+        .HasForeignKey(time => time.EmployeeId);
     }
 
     /// <summary>

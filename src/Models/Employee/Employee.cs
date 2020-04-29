@@ -16,11 +16,11 @@ namespace WorkHoursTracker.Models
     /// </summary>
     public Employee()
     {
-      this.Times = new HashSet<Time>();
+      Times = new HashSet<Time>();
     }
 
     ///<value> Employee key, auto generated </value>
-    public int EmployeeID { get; set; }
+    public int EmployeeId { get; set; }
 
     ///<value> Employee name </value>
     [Required]
@@ -35,15 +35,9 @@ namespace WorkHoursTracker.Models
     public string JobTitle { get; set; } // shoud be changed to enum type 
 
     ///<value> Collection of time for Employee </value>
-    [NotMapped]
-    public virtual ICollection<Time> Times { get; set; }
+    public ICollection<Time> Times { get; set; }
 
     ///<value> Curent time id (if Employee currently working) </value>
-    [ForeignKey("CurrentTime")]
     public int? CurrentTimeId { get; set; }
-
-    ///<value> Current time </value>
-    [NotMapped]
-    public virtual Time CurrentTime { get; set; }
   }
 }

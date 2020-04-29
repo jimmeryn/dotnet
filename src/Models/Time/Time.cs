@@ -10,16 +10,13 @@ namespace WorkHoursTracker.Models
   public class Time
   {
     ///<value> Time Id </value>
-    [DatabaseGenerated(DatabaseGeneratedOption.None)]
-    public int TimeID { get; set; }
+    public int TimeId { get; set; }
 
     ///<value> Employee id, foreign key </value>
-    [ForeignKey("Employee")]
     public int EmployeeId { get; set; }
 
     ///<value> Employee asociated with time </value>
-    [NotMapped]
-    public virtual Employee Employee { get; set; }
+    public Employee Employee { get; set; }
 
     ///<value> Time of work start </value>
     public DateTime StartDate { get; set; }
