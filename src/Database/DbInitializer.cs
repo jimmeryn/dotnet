@@ -1,7 +1,11 @@
 using WorkHoursTracker.Models;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Net.Http;
+using Newtonsoft.Json;
+
+using WorkHoursTracker.Parsing;
 
 namespace WorkHoursTracker.Data
 {
@@ -18,47 +22,33 @@ namespace WorkHoursTracker.Data
       context.Database.EnsureCreated();
       if (context.Employees.Any())
       {
-        // json placeholder url
-        string url = "http://panamint.ict.pwr.wroc.pl/~wkrzesaj/dotnet_data/db.json";
-        GetDataFromUrl(url);
         return;
       }
       else
       {
+        // json placeholder url
+        string url = "http://panamint.ict.pwr.wroc.pl/~wkrzesaj/dotnet_data/db.json";
+        var data = GetDataFromUrl(url);
+        DataObjecFromJson objectFromJson = JsonConvert.DeserializeObject<DataObjecFromJson>(data);
+        objectFromJson.AddToDatabase(context);
+
         // TODO: get employees from json file/ json.placeholder
-        var Employees = new Employee[] { new Employee { Name = "John", Surname = "Smith", JobTitle = "Worker" } };
-        foreach (Employee employee in Employees)
-        {
-          context.Employees.Add(employee);
-        }
-        context.SaveChanges();
+        // var Employees = new Employee[] { new Employee { Name = "John", Surname = "Smith", JobTitle = "Worker" } };
+        // foreach (Employee employee in Employees)
+        // {
+        //   context.Employees.Add(employee);
+        // }
+        // context.SaveChanges();
       }
     }
 
     /// <summary>
     /// Used to fetch data from url
     /// </summary>
-    private static async void GetDataFromUrl(string url)
+    private static string GetDataFromUrl(string url)
     {
-      Console.WriteLine("Getting data from: " + url);
-      try
-      {
-        using (HttpClient client = new HttpClient())
-        using (HttpResponseMessage res = await client.GetAsync(url))
-        using (HttpContent content = res.Content)
-        {
-          Console.WriteLine("Client: " + client + "res: " + res + "content: " + content);
-          var data = await content.ReadAsStringAsync();
-          if (data != null) Console.WriteLine(data);
-          else Console.WriteLine("No Data");
-        }
-
-
-      }
-      catch (Exception exception)
-      {
-        Console.WriteLine("Exception :" + exception);
-      }
+      using (var webClient = new System.Net.WebClient())
+        return webClient.DownloadString(url);
     }
   }
 }
