@@ -19,7 +19,6 @@ namespace WorkHoursTracker.Data
     /// </summary>
     public static void Initialize(DataBaseContext context)
     {
-      context.Database.EnsureCreated();
       if (context.Employees.Any())
       {
         return;
@@ -31,14 +30,6 @@ namespace WorkHoursTracker.Data
         var data = GetDataFromUrl(url);
         DataObjecFromJson objectFromJson = JsonConvert.DeserializeObject<DataObjecFromJson>(data);
         objectFromJson.AddToDatabase(context);
-
-        // TODO: get employees from json file/ json.placeholder
-        // var Employees = new Employee[] { new Employee { Name = "John", Surname = "Smith", JobTitle = "Worker" } };
-        // foreach (Employee employee in Employees)
-        // {
-        //   context.Employees.Add(employee);
-        // }
-        // context.SaveChanges();
       }
     }
 
