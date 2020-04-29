@@ -40,8 +40,16 @@ dotnet run
 
 ### Adding migrations
 
+Create new migration:
+
 ```sh
 dotnet ef migrations add <migratin_name>
+```
+
+Apply it to database:
+
+```sh
+dotnet ef database update
 ```
 
 ### Run unitests
