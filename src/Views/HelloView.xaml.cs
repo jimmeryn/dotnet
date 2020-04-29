@@ -13,7 +13,12 @@ namespace WorkHoursTracker.Views
     public HelloView()
     {
       InitializeComponent();
-      DataModelObject FullNameContext = new DataModelObject() { Name = ((App)Application.Current).Name, Surname = ((App)Application.Current).Surname, JobTitle = "Worker" };
+      DataModelObject FullNameContext = new DataModelObject()
+      {
+        Name = ((App)Application.Current).Name,
+        Surname = ((App)Application.Current).Surname,
+        JobTitle = ((App)Application.Current).JobTitle
+      };
       UserDataName.DataContext = FullNameContext;
       UserDataSurname.DataContext = FullNameContext;
       UserDataJobTitle.DataContext = FullNameContext;
