@@ -33,13 +33,12 @@ namespace WorkHoursTracker
     /// </summary> 
     public void LogInButtonClicked(object sender, RoutedEventArgs e)
     {
-      if (EmployeeValidation.Validate(EmployeeName.Text, EmployeeSurname.Text) || true /* FOR DEVELOPMENT*/)
+      if (EmployeeValidation.Validate(EmployeeName.Text, EmployeeSurname.Text))
       {
+        ((App)Application.Current).CreateCurrentEmployee(EmployeeName.Text, EmployeeSurname.Text);
         HomeWindow window = new HomeWindow();
         window.Show();
         this.Close();
-        ((App)Application.Current).Name = EmployeeName.Text;
-        ((App)Application.Current).Surname = EmployeeSurname.Text;
       }
       else
         MessageBox.Show("Cannot login as " + EmployeeName.Text + " " + EmployeeSurname.Text);
