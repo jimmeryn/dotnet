@@ -33,12 +33,40 @@ namespace WorkHoursTracker.Views
       InitializeComponent();
       TimeModelObject StatsContext = new TimeModelObject()
       {
-        MonthTime = TimeSpanToHours(CalculateMonthTime(DateTime.Now.Month)),
-        YearTime = TimeSpanToHours(CalculateYearTime()),
+        MonthTime = TimeSpanToString(CalculateMonthTime(DateTime.Now.Month)),
+        YearTime = TimeSpanToString(CalculateYearTime()),
       };
       ThisMonthTime.DataContext = StatsContext;
       ThisYearTime.DataContext = StatsContext;
+
+      SeriesCollection = new SeriesCollection
+            {
+                new ColumnSeries
+                {
+                    Title = "Hours: ",
+                    Values = new ChartValues<int> { TimeSpanToHours(CalculateMonthTime(1)),
+                      TimeSpanToHours(CalculateMonthTime(2)),
+                      TimeSpanToHours(CalculateMonthTime(3)),
+                      TimeSpanToHours(CalculateMonthTime(4)),
+                      TimeSpanToHours(CalculateMonthTime(5)),
+                      TimeSpanToHours(CalculateMonthTime(6)),
+                      TimeSpanToHours(CalculateMonthTime(7)),
+                      TimeSpanToHours(CalculateMonthTime(8)),
+                      TimeSpanToHours(CalculateMonthTime(9)),
+                      TimeSpanToHours(CalculateMonthTime(10)),
+                      TimeSpanToHours(CalculateMonthTime(11)),
+                      TimeSpanToHours(CalculateMonthTime(12)) }
+                }
+            };
+      Labels = new[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" };
+      Formatter = value => value.ToString("N");
+
+      DataContext = this;
     }
+
+    public SeriesCollection SeriesCollection { get; set; }
+    public string[] Labels { get; set; }
+    public Func<double, string> Formatter { get; set; }
 
     ///<summary>
     /// Calculate certain month work time and return it as Time Span
@@ -79,9 +107,19 @@ namespace WorkHoursTracker.Views
     ///<summary>
     /// Convert Time Span to string in fromat hours:minutes
     ///</summary>
-    private string TimeSpanToHours(TimeSpan time)
+    private string TimeSpanToString(TimeSpan time)
     {
       return string.Format("{0:00}:{1:00}", (int)time.TotalHours, time.Minutes);
     }
+
+    ///<summary>
+    /// Convert Time Span to string in fromat hours:minutes
+    ///</summary>
+    private int TimeSpanToHours(TimeSpan time)
+    {
+      return (int)time.TotalHours;
+    }
+
+
   }
 }
