@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.DataModels
+  commentId: N:WorkHoursTracker.DataModels
+  id: WorkHoursTracker.DataModels
+  children:
+  - WorkHoursTracker.DataModels.DataModelObject
+  - WorkHoursTracker.DataModels.TimeModelObject
+  langs:
+  - csharp
+  - vb
+  name: WorkHoursTracker.DataModels
+  nameWithType: WorkHoursTracker.DataModels
+  fullName: WorkHoursTracker.DataModels
+  type: Namespace
+  assemblies:
+  - WorkHoursTracker
+references:
+- uid: WorkHoursTracker.DataModels.DataModelObject
+  commentId: T:WorkHoursTracker.DataModels.DataModelObject
+  name: DataModelObject
+  nameWithType: DataModelObject
+  fullName: WorkHoursTracker.DataModels.DataModelObject
+- uid: WorkHoursTracker.DataModels.TimeModelObject
+  commentId: T:WorkHoursTracker.DataModels.TimeModelObject
+  name: TimeModelObject
+  nameWithType: TimeModelObject
+  fullName: WorkHoursTracker.DataModels.TimeModelObject

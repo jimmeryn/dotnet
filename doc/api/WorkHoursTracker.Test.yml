@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.Test
+  commentId: N:WorkHoursTracker.Test
+  id: WorkHoursTracker.Test
+  children:
+  - WorkHoursTracker.Test.EmployeeTest
+  - WorkHoursTracker.Test.Stats
+  langs:
+  - csharp
+  - vb
+  name: WorkHoursTracker.Test
+  nameWithType: WorkHoursTracker.Test
+  fullName: WorkHoursTracker.Test
+  type: Namespace
+  assemblies:
+  - WorkHoursTracker
+references:
+- uid: WorkHoursTracker.Test.EmployeeTest
+  commentId: T:WorkHoursTracker.Test.EmployeeTest
+  name: EmployeeTest
+  nameWithType: EmployeeTest
+  fullName: WorkHoursTracker.Test.EmployeeTest
+- uid: WorkHoursTracker.Test.Stats
+  commentId: T:WorkHoursTracker.Test.Stats
+  name: Stats
+  nameWithType: Stats
+  fullName: WorkHoursTracker.Test.Stats

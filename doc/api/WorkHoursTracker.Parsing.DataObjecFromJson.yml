@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.Parsing.DataObjecFromJson
+  commentId: T:WorkHoursTracker.Parsing.DataObjecFromJson
+  id: DataObjecFromJson
+  parent: WorkHoursTracker.Parsing
+  children:
+  - WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase(WorkHoursTracker.DataBaseContext)
+  - WorkHoursTracker.Parsing.DataObjecFromJson.Employees
+  - WorkHoursTracker.Parsing.DataObjecFromJson.Times
+  langs:
+  - csharp
+  - vb
+  name: DataObjecFromJson
+  nameWithType: DataObjecFromJson
+  fullName: WorkHoursTracker.Parsing.DataObjecFromJson
+  type: Class
+  source:
+    remote:
+      path: src/Database/DataObjectFromJson.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: DataObjecFromJson
+    path: src/Database/DataObjectFromJson.cs
+    startLine: 14
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Parsing
+  summary: "\nDataObjectFromJson is used to generate data from json to database.\n<xref href=\"WorkHoursTracker.Models.Employee\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public class DataObjecFromJson
+    content.vb: Public Class DataObjecFromJson
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WorkHoursTracker.Parsing.DataObjecFromJson.Employees
+  commentId: F:WorkHoursTracker.Parsing.DataObjecFromJson.Employees
+  id: Employees
+  parent: WorkHoursTracker.Parsing.DataObjecFromJson
+  langs:
+  - csharp
+  - vb
+  name: Employees
+  nameWithType: DataObjecFromJson.Employees
+  fullName: WorkHoursTracker.Parsing.DataObjecFromJson.Employees
+  type: Field
+  source:
+    remote:
+      path: src/Database/DataObjectFromJson.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: Employees
+    path: src/Database/DataObjectFromJson.cs
+    startLine: 18
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Parsing
+  example: []
+  syntax:
+    content: public Employee[] Employees
+    return:
+      type: WorkHoursTracker.Models.Employee[]
+      description: 'Employees array. Look at data context '
+    content.vb: Public Employees As Employee()
+  seealso:
+  - linkId: WorkHoursTracker.DataBaseContext.Employees
+    commentId: P:WorkHoursTracker.DataBaseContext.Employees
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Parsing.DataObjecFromJson.Times
+  commentId: F:WorkHoursTracker.Parsing.DataObjecFromJson.Times
+  id: Times
+  parent: WorkHoursTracker.Parsing.DataObjecFromJson
+  langs:
+  - csharp
+  - vb
+  name: Times
+  nameWithType: DataObjecFromJson.Times
+  fullName: WorkHoursTracker.Parsing.DataObjecFromJson.Times
+  type: Field
+  source:
+    remote:
+      path: src/Database/DataObjectFromJson.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: Times
+    path: src/Database/DataObjectFromJson.cs
+    startLine: 22
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Parsing
+  example: []
+  syntax:
+    content: public Time[] Times
+    return:
+      type: WorkHoursTracker.Models.Time[]
+      description: 'Times array. Look at data context '
+    content.vb: Public Times As Time()
+  seealso:
+  - linkId: WorkHoursTracker.DataBaseContext.Times
+    commentId: P:WorkHoursTracker.DataBaseContext.Times
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase(WorkHoursTracker.DataBaseContext)
+  commentId: M:WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase(WorkHoursTracker.DataBaseContext)
+  id: AddToDatabase(WorkHoursTracker.DataBaseContext)
+  parent: WorkHoursTracker.Parsing.DataObjecFromJson
+  langs:
+  - csharp
+  - vb
+  name: AddToDatabase(DataBaseContext)
+  nameWithType: DataObjecFromJson.AddToDatabase(DataBaseContext)
+  fullName: WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase(WorkHoursTracker.DataBaseContext)
+  type: Method
+  source:
+    remote:
+      path: src/Database/DataObjectFromJson.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: AddToDatabase
+    path: src/Database/DataObjectFromJson.cs
+    startLine: 27
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Parsing
+  summary: "\nAdding data from current object to database\n"
+  example: []
+  syntax:
+    content: public void AddToDatabase(DataBaseContext context)
+    parameters:
+    - id: context
+      type: WorkHoursTracker.DataBaseContext
+    content.vb: Public Sub AddToDatabase(context As DataBaseContext)
+  overload: WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WorkHoursTracker.Models.Employee
+  commentId: T:WorkHoursTracker.Models.Employee
+  parent: WorkHoursTracker.Models
+  name: Employee
+  nameWithType: Employee
+  fullName: WorkHoursTracker.Models.Employee
+- uid: WorkHoursTracker.Parsing
+  commentId: N:WorkHoursTracker.Parsing
+  name: WorkHoursTracker.Parsing
+  nameWithType: WorkHoursTracker.Parsing
+  fullName: WorkHoursTracker.Parsing
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: WorkHoursTracker.Models
+  commentId: N:WorkHoursTracker.Models
+  name: WorkHoursTracker.Models
+  nameWithType: WorkHoursTracker.Models
+  fullName: WorkHoursTracker.Models
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WorkHoursTracker.DataBaseContext.Employees
+  commentId: P:WorkHoursTracker.DataBaseContext.Employees
+  isExternal: true
+- uid: WorkHoursTracker.Models.Employee[]
+  isExternal: true
+  name: Employee[]
+  nameWithType: Employee[]
+  fullName: WorkHoursTracker.Models.Employee[]
+  nameWithType.vb: Employee()
+  fullName.vb: WorkHoursTracker.Models.Employee()
+  name.vb: Employee()
+  spec.csharp:
+  - uid: WorkHoursTracker.Models.Employee
+    name: Employee
+    nameWithType: Employee
+    fullName: WorkHoursTracker.Models.Employee
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WorkHoursTracker.Models.Employee
+    name: Employee
+    nameWithType: Employee
+    fullName: WorkHoursTracker.Models.Employee
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WorkHoursTracker.DataBaseContext.Times
+  commentId: P:WorkHoursTracker.DataBaseContext.Times
+  isExternal: true
+- uid: WorkHoursTracker.Models.Time[]
+  isExternal: true
+  name: Time[]
+  nameWithType: Time[]
+  fullName: WorkHoursTracker.Models.Time[]
+  nameWithType.vb: Time()
+  fullName.vb: WorkHoursTracker.Models.Time()
+  name.vb: Time()
+  spec.csharp:
+  - uid: WorkHoursTracker.Models.Time
+    name: Time
+    nameWithType: Time
+    fullName: WorkHoursTracker.Models.Time
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: WorkHoursTracker.Models.Time
+    name: Time
+    nameWithType: Time
+    fullName: WorkHoursTracker.Models.Time
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase*
+  commentId: Overload:WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase
+  name: AddToDatabase
+  nameWithType: DataObjecFromJson.AddToDatabase
+  fullName: WorkHoursTracker.Parsing.DataObjecFromJson.AddToDatabase
+- uid: WorkHoursTracker.DataBaseContext
+  commentId: T:WorkHoursTracker.DataBaseContext
+  parent: WorkHoursTracker
+  name: DataBaseContext
+  nameWithType: DataBaseContext
+  fullName: WorkHoursTracker.DataBaseContext
+- uid: WorkHoursTracker
+  commentId: N:WorkHoursTracker
+  name: WorkHoursTracker
+  nameWithType: WorkHoursTracker
+  fullName: WorkHoursTracker

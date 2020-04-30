@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.Parsing
+  commentId: N:WorkHoursTracker.Parsing
+  id: WorkHoursTracker.Parsing
+  children:
+  - WorkHoursTracker.Parsing.DataObjecFromJson
+  langs:
+  - csharp
+  - vb
+  name: WorkHoursTracker.Parsing
+  nameWithType: WorkHoursTracker.Parsing
+  fullName: WorkHoursTracker.Parsing
+  type: Namespace
+  assemblies:
+  - WorkHoursTracker
+references:
+- uid: WorkHoursTracker.Parsing.DataObjecFromJson
+  commentId: T:WorkHoursTracker.Parsing.DataObjecFromJson
+  name: DataObjecFromJson
+  nameWithType: DataObjecFromJson
+  fullName: WorkHoursTracker.Parsing.DataObjecFromJson

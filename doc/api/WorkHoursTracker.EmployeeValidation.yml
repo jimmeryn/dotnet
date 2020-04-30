@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.EmployeeValidation
+  commentId: T:WorkHoursTracker.EmployeeValidation
+  id: EmployeeValidation
+  parent: WorkHoursTracker
+  children:
+  - WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
+  - WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: EmployeeValidation
+  nameWithType: EmployeeValidation
+  fullName: WorkHoursTracker.EmployeeValidation
+  type: Class
+  source:
+    remote:
+      path: src/Validation/EmployeeVaidation.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: EmployeeValidation
+    path: src/Validation/EmployeeVaidation.cs
+    startLine: 11
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker
+  summary: "\nEmployee validation class\n"
+  example: []
+  syntax:
+    content: public static class EmployeeValidation
+    content.vb: Public Module EmployeeValidation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
+  commentId: M:WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
+  id: Validate(System.String,System.String)
+  parent: WorkHoursTracker.EmployeeValidation
+  langs:
+  - csharp
+  - vb
+  name: Validate(String, String)
+  nameWithType: EmployeeValidation.Validate(String, String)
+  fullName: WorkHoursTracker.EmployeeValidation.Validate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Validation/EmployeeVaidation.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: Validate
+    path: src/Validation/EmployeeVaidation.cs
+    startLine: 16
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker
+  summary: "\nEmployee data validation.false Used to log in.\n"
+  example: []
+  syntax:
+    content: public static bool Validate(string name, string surname)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Validate(name As String, surname As String) As Boolean
+  overload: WorkHoursTracker.EmployeeValidation.Validate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
+  id: NewValidate(System.String,System.String,System.String)
+  parent: WorkHoursTracker.EmployeeValidation
+  langs:
+  - csharp
+  - vb
+  name: NewValidate(String, String, String)
+  nameWithType: EmployeeValidation.NewValidate(String, String, String)
+  fullName: WorkHoursTracker.EmployeeValidation.NewValidate(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: src/Validation/EmployeeVaidation.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: NewValidate
+    path: src/Validation/EmployeeVaidation.cs
+    startLine: 40
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker
+  summary: "\nValidate new employee data. Used to sing in.\n"
+  example: []
+  syntax:
+    content: public static bool NewValidate(string name, string surname, string jobTitle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    - id: jobTitle
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function NewValidate(name As String, surname As String, jobTitle As String) As Boolean
+  overload: WorkHoursTracker.EmployeeValidation.NewValidate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: WorkHoursTracker
+  commentId: N:WorkHoursTracker
+  name: WorkHoursTracker
+  nameWithType: WorkHoursTracker
+  fullName: WorkHoursTracker
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WorkHoursTracker.EmployeeValidation.Validate*
+  commentId: Overload:WorkHoursTracker.EmployeeValidation.Validate
+  name: Validate
+  nameWithType: EmployeeValidation.Validate
+  fullName: WorkHoursTracker.EmployeeValidation.Validate
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WorkHoursTracker.EmployeeValidation.NewValidate*
+  commentId: Overload:WorkHoursTracker.EmployeeValidation.NewValidate
+  name: NewValidate
+  nameWithType: EmployeeValidation.NewValidate
+  fullName: WorkHoursTracker.EmployeeValidation.NewValidate

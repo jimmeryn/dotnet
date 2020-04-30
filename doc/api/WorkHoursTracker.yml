@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker
+  commentId: N:WorkHoursTracker
+  id: WorkHoursTracker
+  children:
+  - WorkHoursTracker.App
+  - WorkHoursTracker.Connection
+  - WorkHoursTracker.DataBaseContext
+  - WorkHoursTracker.EmployeeValidation
+  - WorkHoursTracker.HomeWindow
+  - WorkHoursTracker.MainWindow
+  - WorkHoursTracker.SingUpWindow
+  langs:
+  - csharp
+  - vb
+  name: WorkHoursTracker
+  nameWithType: WorkHoursTracker
+  fullName: WorkHoursTracker
+  type: Namespace
+  assemblies:
+  - WorkHoursTracker
+references:
+- uid: WorkHoursTracker.App
+  commentId: T:WorkHoursTracker.App
+  name: App
+  nameWithType: App
+  fullName: WorkHoursTracker.App
+- uid: WorkHoursTracker.MainWindow
+  commentId: T:WorkHoursTracker.MainWindow
+  name: MainWindow
+  nameWithType: MainWindow
+  fullName: WorkHoursTracker.MainWindow
+- uid: WorkHoursTracker.Connection
+  commentId: T:WorkHoursTracker.Connection
+  parent: WorkHoursTracker
+  name: Connection
+  nameWithType: Connection
+  fullName: WorkHoursTracker.Connection
+- uid: WorkHoursTracker.DataBaseContext
+  commentId: T:WorkHoursTracker.DataBaseContext
+  parent: WorkHoursTracker
+  name: DataBaseContext
+  nameWithType: DataBaseContext
+  fullName: WorkHoursTracker.DataBaseContext
+- uid: WorkHoursTracker.EmployeeValidation
+  commentId: T:WorkHoursTracker.EmployeeValidation
+  name: EmployeeValidation
+  nameWithType: EmployeeValidation
+  fullName: WorkHoursTracker.EmployeeValidation
+- uid: WorkHoursTracker.HomeWindow
+  commentId: T:WorkHoursTracker.HomeWindow
+  name: HomeWindow
+  nameWithType: HomeWindow
+  fullName: WorkHoursTracker.HomeWindow
+- uid: WorkHoursTracker.SingUpWindow
+  commentId: T:WorkHoursTracker.SingUpWindow
+  name: SingUpWindow
+  nameWithType: SingUpWindow
+  fullName: WorkHoursTracker.SingUpWindow
+- uid: WorkHoursTracker
+  commentId: N:WorkHoursTracker
+  name: WorkHoursTracker
+  nameWithType: WorkHoursTracker
+  fullName: WorkHoursTracker

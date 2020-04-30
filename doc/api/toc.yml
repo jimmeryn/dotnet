@@ -1,0 +1,72 @@
+### YamlMime:TableOfContent
+- uid: WorkHoursTracker
+  name: WorkHoursTracker
+  items:
+  - uid: WorkHoursTracker.App
+    name: App
+  - uid: WorkHoursTracker.Connection
+    name: Connection
+  - uid: WorkHoursTracker.DataBaseContext
+    name: DataBaseContext
+  - uid: WorkHoursTracker.EmployeeValidation
+    name: EmployeeValidation
+  - uid: WorkHoursTracker.HomeWindow
+    name: HomeWindow
+  - uid: WorkHoursTracker.MainWindow
+    name: MainWindow
+  - uid: WorkHoursTracker.SingUpWindow
+    name: SingUpWindow
+- uid: WorkHoursTracker.Data
+  name: WorkHoursTracker.Data
+  items:
+  - uid: WorkHoursTracker.Data.DbInitializer
+    name: DbInitializer
+- uid: WorkHoursTracker.DataModels
+  name: WorkHoursTracker.DataModels
+  items:
+  - uid: WorkHoursTracker.DataModels.DataModelObject
+    name: DataModelObject
+  - uid: WorkHoursTracker.DataModels.TimeModelObject
+    name: TimeModelObject
+- uid: WorkHoursTracker.Migrations
+  name: WorkHoursTracker.Migrations
+  items:
+  - uid: WorkHoursTracker.Migrations.Test
+    name: Test
+- uid: WorkHoursTracker.Models
+  name: WorkHoursTracker.Models
+  items:
+  - uid: WorkHoursTracker.Models.Employee
+    name: Employee
+  - uid: WorkHoursTracker.Models.Time
+    name: Time
+- uid: WorkHoursTracker.Parsing
+  name: WorkHoursTracker.Parsing
+  items:
+  - uid: WorkHoursTracker.Parsing.DataObjecFromJson
+    name: DataObjecFromJson
+- uid: WorkHoursTracker.Test
+  name: WorkHoursTracker.Test
+  items:
+  - uid: WorkHoursTracker.Test.EmployeeTest
+    name: EmployeeTest
+  - uid: WorkHoursTracker.Test.Stats
+    name: Stats
+- uid: WorkHoursTracker.ViewModels
+  name: WorkHoursTracker.ViewModels
+  items:
+  - uid: WorkHoursTracker.ViewModels.HelloViewModel
+    name: HelloViewModel
+  - uid: WorkHoursTracker.ViewModels.RegisterTimeViewModel
+    name: RegisterTimeViewModel
+  - uid: WorkHoursTracker.ViewModels.StatsViewModel
+    name: StatsViewModel
+- uid: WorkHoursTracker.Views
+  name: WorkHoursTracker.Views
+  items:
+  - uid: WorkHoursTracker.Views.HelloView
+    name: HelloView
+  - uid: WorkHoursTracker.Views.RegisterTimeView
+    name: RegisterTimeView
+  - uid: WorkHoursTracker.Views.StatsView
+    name: StatsView

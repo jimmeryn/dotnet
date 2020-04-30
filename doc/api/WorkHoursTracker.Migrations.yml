@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.Migrations
+  commentId: N:WorkHoursTracker.Migrations
+  id: WorkHoursTracker.Migrations
+  children:
+  - WorkHoursTracker.Migrations.Test
+  langs:
+  - csharp
+  - vb
+  name: WorkHoursTracker.Migrations
+  nameWithType: WorkHoursTracker.Migrations
+  fullName: WorkHoursTracker.Migrations
+  type: Namespace
+  assemblies:
+  - WorkHoursTracker
+references:
+- uid: WorkHoursTracker.Migrations.Test
+  commentId: T:WorkHoursTracker.Migrations.Test
+  name: Test
+  nameWithType: Test
+  fullName: WorkHoursTracker.Migrations.Test

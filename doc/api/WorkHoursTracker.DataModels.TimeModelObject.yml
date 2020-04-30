@@ -1,0 +1,453 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.DataModels.TimeModelObject
+  commentId: T:WorkHoursTracker.DataModels.TimeModelObject
+  id: TimeModelObject
+  parent: WorkHoursTracker.DataModels
+  children:
+  - WorkHoursTracker.DataModels.TimeModelObject.MonthTime
+  - WorkHoursTracker.DataModels.TimeModelObject.YearTime
+  langs:
+  - csharp
+  - vb
+  name: TimeModelObject
+  nameWithType: TimeModelObject
+  fullName: WorkHoursTracker.DataModels.TimeModelObject
+  type: Class
+  source:
+    remote:
+      path: src/Objects/TimeModelObject.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: TimeModelObject
+    path: src/Objects/TimeModelObject.cs
+    startLine: 8
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.DataModels
+  summary: "\nDataModelObject used to store data calculated from database localy.\n<xref href=\"WorkHoursTracker.Models.Time\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public class TimeModelObject
+    content.vb: Public Class TimeModelObject
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WorkHoursTracker.DataModels.TimeModelObject.MonthTime
+  commentId: P:WorkHoursTracker.DataModels.TimeModelObject.MonthTime
+  id: MonthTime
+  parent: WorkHoursTracker.DataModels.TimeModelObject
+  langs:
+  - csharp
+  - vb
+  name: MonthTime
+  nameWithType: TimeModelObject.MonthTime
+  fullName: WorkHoursTracker.DataModels.TimeModelObject.MonthTime
+  type: Property
+  source:
+    remote:
+      path: src/Objects/TimeModelObject.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: MonthTime
+    path: src/Objects/TimeModelObject.cs
+    startLine: 12
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.DataModels
+  example: []
+  syntax:
+    content: public string MonthTime { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: 'Month time spend in work of currend logged employee '
+    content.vb: Public Property MonthTime As String
+  overload: WorkHoursTracker.DataModels.TimeModelObject.MonthTime*
+  seealso:
+  - linkId: WorkHoursTracker.Views.StatsView
+    commentId: T:WorkHoursTracker.Views.StatsView
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.DataModels.TimeModelObject.YearTime
+  commentId: P:WorkHoursTracker.DataModels.TimeModelObject.YearTime
+  id: YearTime
+  parent: WorkHoursTracker.DataModels.TimeModelObject
+  langs:
+  - csharp
+  - vb
+  name: YearTime
+  nameWithType: TimeModelObject.YearTime
+  fullName: WorkHoursTracker.DataModels.TimeModelObject.YearTime
+  type: Property
+  source:
+    remote:
+      path: src/Objects/TimeModelObject.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: YearTime
+    path: src/Objects/TimeModelObject.cs
+    startLine: 16
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.DataModels
+  example: []
+  syntax:
+    content: public string YearTime { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: 'Year time spend in work of currend logged employee '
+    content.vb: Public Property YearTime As String
+  overload: WorkHoursTracker.DataModels.TimeModelObject.YearTime*
+  seealso:
+  - linkId: WorkHoursTracker.Views.StatsView
+    commentId: T:WorkHoursTracker.Views.StatsView
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: WorkHoursTracker.Models.Time
+  commentId: T:WorkHoursTracker.Models.Time
+  name: Time
+  nameWithType: Time
+  fullName: WorkHoursTracker.Models.Time
+- uid: WorkHoursTracker.DataModels
+  commentId: N:WorkHoursTracker.DataModels
+  name: WorkHoursTracker.DataModels
+  nameWithType: WorkHoursTracker.DataModels
+  fullName: WorkHoursTracker.DataModels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WorkHoursTracker.Views.StatsView
+  commentId: T:WorkHoursTracker.Views.StatsView
+  name: StatsView
+  nameWithType: StatsView
+  fullName: WorkHoursTracker.Views.StatsView
+- uid: WorkHoursTracker.DataModels.TimeModelObject.MonthTime*
+  commentId: Overload:WorkHoursTracker.DataModels.TimeModelObject.MonthTime
+  name: MonthTime
+  nameWithType: TimeModelObject.MonthTime
+  fullName: WorkHoursTracker.DataModels.TimeModelObject.MonthTime
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: WorkHoursTracker.DataModels.TimeModelObject.YearTime*
+  commentId: Overload:WorkHoursTracker.DataModels.TimeModelObject.YearTime
+  name: YearTime
+  nameWithType: TimeModelObject.YearTime
+  fullName: WorkHoursTracker.DataModels.TimeModelObject.YearTime

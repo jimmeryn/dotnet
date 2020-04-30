@@ -1,0 +1,536 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.Test.Stats
+  commentId: T:WorkHoursTracker.Test.Stats
+  id: Stats
+  parent: WorkHoursTracker.Test
+  children:
+  - WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
+  - WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
+  - WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
+  - WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: Stats
+  fullName: WorkHoursTracker.Test.Stats
+  type: Class
+  source:
+    remote:
+      path: tests/Stats.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: Stats
+    path: tests/Stats.test.cs
+    startLine: 25
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nEmployee class tests\n"
+  example: []
+  syntax:
+    content: public class Stats
+    content.vb: Public Class Stats
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
+  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
+  id: TimeSpanToHoursTest
+  parent: WorkHoursTracker.Test.Stats
+  langs:
+  - csharp
+  - vb
+  name: TimeSpanToHoursTest()
+  nameWithType: Stats.TimeSpanToHoursTest()
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest()
+  type: Method
+  source:
+    remote:
+      path: tests/Stats.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: TimeSpanToHoursTest
+    path: tests/Stats.test.cs
+    startLine: 30
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nTimeSpanToHours basic test\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TimeSpanToHoursTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TimeSpanToHoursTest
+  overload: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
+  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
+  id: GetCurrentUserTimeTypeTest
+  parent: WorkHoursTracker.Test.Stats
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserTimeTypeTest()
+  nameWithType: Stats.GetCurrentUserTimeTypeTest()
+  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest()
+  type: Method
+  source:
+    remote:
+      path: tests/Stats.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: GetCurrentUserTimeTypeTest
+    path: tests/Stats.test.cs
+    startLine: 39
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nGetCurrentUserTime basic return type test\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetCurrentUserTimeTypeTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetCurrentUserTimeTypeTest
+  overload: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
+  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
+  id: GetCurrentUserTimeTest
+  parent: WorkHoursTracker.Test.Stats
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentUserTimeTest()
+  nameWithType: Stats.GetCurrentUserTimeTest()
+  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest()
+  type: Method
+  source:
+    remote:
+      path: tests/Stats.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: GetCurrentUserTimeTest
+    path: tests/Stats.test.cs
+    startLine: 48
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nGetCurrentUserTime basic return type test\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetCurrentUserTimeTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetCurrentUserTimeTest
+  overload: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
+  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
+  id: GetCurrentMonthTimeTest
+  parent: WorkHoursTracker.Test.Stats
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentMonthTimeTest()
+  nameWithType: Stats.GetCurrentMonthTimeTest()
+  fullName: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest()
+  type: Method
+  source:
+    remote:
+      path: tests/Stats.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: GetCurrentMonthTimeTest
+    path: tests/Stats.test.cs
+    startLine: 59
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nGetCurrentUserTime basic return type test\n"
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void GetCurrentMonthTimeTest()
+    content.vb: >-
+      <Fact>
+
+      Public Sub GetCurrentMonthTimeTest
+  overload: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WorkHoursTracker.Test
+  commentId: N:WorkHoursTracker.Test
+  name: WorkHoursTracker.Test
+  nameWithType: WorkHoursTracker.Test
+  fullName: WorkHoursTracker.Test
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest*
+  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
+  name: TimeSpanToHoursTest
+  nameWithType: Stats.TimeSpanToHoursTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
+- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest*
+  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
+  name: GetCurrentUserTimeTypeTest
+  nameWithType: Stats.GetCurrentUserTimeTypeTest
+  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
+- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest*
+  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
+  name: GetCurrentUserTimeTest
+  nameWithType: Stats.GetCurrentUserTimeTest
+  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
+- uid: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest*
+  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
+  name: GetCurrentMonthTimeTest
+  nameWithType: Stats.GetCurrentMonthTimeTest
+  fullName: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
