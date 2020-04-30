@@ -65,35 +65,42 @@ namespace WorkHoursTracker.Views
 
     public void registerTime(object sender, RoutedEventArgs e)
     {
-      // check if curren employee is working or not and set start or stop time acordingly
+      // Check if current employee is working or not and set start or stop time accordingly
       using (var context = new DataBaseContext())
       {
         try
         {
-          context.Database.EnsureCreated();
           var currentEmployee = context.Employees.FirstOrDefault(user =>
               user.Name == ((App)Application.Current).Name &&
               user.Surname == ((App)Application.Current).Surname);
           if (currentEmployee != null)
           {
-            var time = new Time
+            if (currentEmployee.CurrentTimeId == null)
             {
-              StartDate = DateTime.Now,
-              EndDate = DateTime.Now,
-              EmployeeId = currentEmployee.EmployeeId
-            };
-            context.Times.Add(time);
-            currentEmployee.Times.Add(time);
+              var time = new Time
+              {
+                TimeId = context.Times.DefaultIfEmpty().Max(t => t.TimeId) + 1,
+                StartDate = DateTime.Now,
+                EndDate = DateTime.Now,
+                EmployeeId = currentEmployee.EmployeeId
+              };
+              context.Times.Add(time);
+              currentEmployee.Times.Add(time);
+              currentEmployee.CurrentTimeId = time.TimeId;
+              ((App)Application.Current).CurrentTimeId = time.TimeId;
+            }
+            else
+            {
+              var currentTime = context.Times.FirstOrDefault(time => time.TimeId == currentEmployee.CurrentTimeId);
+              currentTime.EndDate = DateTime.Now;
+              context.Times.Update(currentTime);
+              currentEmployee.CurrentTimeId = null;
+              ((App)Application.Current).CurrentTimeId = null;
+            }
             context.Employees.Update(currentEmployee);
-            foreach (var item in context.Employees.FirstOrDefault().Times)
-              System.Console.WriteLine(item.TimeId);
             context.SaveChanges();
+            UpdateWorkState();
           }
-        }
-        catch (Microsoft.EntityFrameworkCore.DbUpdateException ex)
-        {
-          Console.WriteLine(ex.Entries);
-          throw ex;
         }
         catch (System.Exception ex)
         {
