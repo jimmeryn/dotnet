@@ -66,7 +66,13 @@ namespace WorkHoursTracker
       using (var context = new DataBaseContext())
       {
         context.Database.EnsureCreated();
-        var employee = new Employee { Name = name, Surname = surname, JobTitle = jobTitle };
+        var employee = new Employee
+        {
+          Name = name,
+          Surname = surname,
+          JobTitle = jobTitle,
+          EmployeeId = context.Employees.DefaultIfEmpty().Max(e => e.EmployeeId) + 1
+        };
         context.Employees.Add(employee);
         context.SaveChanges();
       }
