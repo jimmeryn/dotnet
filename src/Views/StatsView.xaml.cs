@@ -117,9 +117,7 @@ namespace WorkHoursTracker.Views
     ///</summary>
     private int TimeSpanToHours(TimeSpan time)
     {
-      return (int)time.TotalHours;
+      return (int)time.TotalHours >= 0 ? (int)Math.Ceiling((double)time.TotalHours) : 0;
     }
-
-
   }
 }
