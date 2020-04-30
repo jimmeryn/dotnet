@@ -34,6 +34,10 @@ namespace WorkHoursTracker
       LoggedAs.DataContext = FullNameContext;
     }
 
+    /// <summary>
+    /// LogOutButtonClicked is a method in the HomeWindow class used when "Log In" button was clicked. Opening new Main window
+    /// <seealso cref="WorkHoursTracker.MainWindow"/>
+    /// </summary>
     public void LogOutButtonClicked(object sender, RoutedEventArgs e)
     {
       MainWindow window = new MainWindow();

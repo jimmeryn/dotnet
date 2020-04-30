@@ -23,6 +23,9 @@ namespace WorkHoursTracker.Views
   /// </summary>
   public partial class RegisterTimeView : UserControl
   {
+    /// <summary>
+    /// RegisterTimeView class basic constructor, starting clock and updating current employee work state.
+    /// </summary>
     public RegisterTimeView()
     {
       InitializeComponent();
@@ -30,6 +33,9 @@ namespace WorkHoursTracker.Views
       UpdateWorkState();
     }
 
+    /// <summary>
+    /// Start clock that is visable on the screen.
+    /// </summary>
     private void StartClock()
     {
       DispatcherTimer timer = new DispatcherTimer();
@@ -38,11 +44,17 @@ namespace WorkHoursTracker.Views
       timer.Start();
     }
 
+    /// <summary>
+    /// Update clock every second
+    /// </summary>
     private void tickevent(object sender, EventArgs e)
     {
       datalbl.Text = DateTime.Now.ToString();
     }
 
+    /// <summary>
+    /// Updating work state which is string visiable on the screen and making sure one button is disable.
+    /// </summary>
     private void UpdateWorkState()
     {
       if (((App)Application.Current).CurrentTimeId != null)
@@ -57,12 +69,18 @@ namespace WorkHoursTracker.Views
       }
     }
 
+    /// <summary>
+    /// Change buttons state.
+    /// </summary>
     private void EnableWorkingButtons(bool isWorking)
     {
       StartWorkingButton.IsEnabled = !isWorking;
       StopWorkingButton.IsEnabled = isWorking;
     }
 
+    /// <summary>
+    /// RegisterTimeView class main logic. Start new time or update previously started and store it in database.
+    /// </summary>
     public void registerTime(object sender, RoutedEventArgs e)
     {
       // Check if current employee is working or not and set start or stop time accordingly

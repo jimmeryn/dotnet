@@ -27,12 +27,31 @@ namespace WorkHoursTracker
       }
     }
 
+    ///<value> EmployeeId stored localy in app.</value>
+    ///<see cref="WorkHoursTracker.Models.Employee.EmployeeId"/>
     public int EmployeeId { get; set; }
+
+    ///<value> Name stored localy in app.</value>
+    ///<see cref="WorkHoursTracker.Models.Employee.Name"/>
     public string Name { get; set; }
+
+    ///<value> Surname stored localy in app.</value>
+    ///<see cref="WorkHoursTracker.Models.Employee.Surname"/>
     public string Surname { get; set; }
+
+    ///<value> JobTitle stored localy in app.</value>
+    ///<see cref="WorkHoursTracker.Models.Employee.JobTitle"/>
     public string JobTitle { get; set; }
+
+    ///<value> CurentTimeId stored localy in app.</value>
+    ///<see cref="WorkHoursTracker.Models.Employee.CurrentTimeId"/>
     public Nullable<int> CurrentTimeId { get; set; }
 
+    /// <summary>
+    /// CreateCurrentEmployee is a method in the App class creating instance of Employee stored localy in memory.
+    /// </summary>
+    /// <param name="name">Name of currently logged employee.</param>
+    /// <param name="surname">Surname of currently logged employee.</param>
     public void CreateCurrentEmployee(string name, string surname)
     {
       Name = name;

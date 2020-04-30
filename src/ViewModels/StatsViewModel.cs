@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace WorkHoursTracker.ViewModels
 {
+  /// <summary>
+  /// StatsViewModel.
+  /// <seealso cref="WorkHoursTracker.Views.StatsView"/>
+  /// </summary>
   public class StatsViewModel
   {
   }

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace WorkHoursTracker.ViewModels
 {
+  /// <summary>
+  /// RegisterTimeViewModel.
+  /// <seealso cref="WorkHoursTracker.Views.RegisterTimeView"/>
+  /// </summary>
   public class RegisterTimeViewModel
   {
   }

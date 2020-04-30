@@ -10,6 +10,9 @@ namespace WorkHoursTracker.Views
   /// </summary>
   public partial class HelloView : UserControl
   {
+    /// <summary>
+    /// HelloView class basic constructor, storing current user data localy.
+    /// </summary>
     public HelloView()
     {
       InitializeComponent();

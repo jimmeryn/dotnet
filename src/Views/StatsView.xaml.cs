@@ -28,6 +28,9 @@ namespace WorkHoursTracker.Views
   /// </summary>
   public partial class StatsView : UserControl
   {
+    /// <summary>
+    /// StatsView class basic constructor, calculating curent employee work time and initialize graph info.
+    /// </summary>
     public StatsView()
     {
       InitializeComponent();
@@ -64,8 +67,13 @@ namespace WorkHoursTracker.Views
       DataContext = this;
     }
 
+    ///<value>Used in graph as collection of series</value>
     public SeriesCollection SeriesCollection { get; set; }
+
+    ///<value>Used in graph as labels</value>
     public string[] Labels { get; set; }
+
+    ///<value>Used in graph as formatters</value>
     public Func<double, string> Formatter { get; set; }
 
     ///<summary>
