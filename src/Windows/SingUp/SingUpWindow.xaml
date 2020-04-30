@@ -47,6 +47,8 @@
         <TextBox Name="EmployeeSurname" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="0,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Height="30" />
         <ComboBox Name="EmployeeJobTitle" Grid.Row="1" Grid.Column="1" Margin="0,160,0,100" Height="30" Width="222">
             <ComboBoxItem>Worker</ComboBoxItem>
+            <ComboBoxItem>Boss</ComboBoxItem>
+            <ComboBoxItem>CEO</ComboBoxItem>
         </ComboBox>
 
         <Button Content="Sing Up" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" Width="160" Height="35" Click="SingUpButtonClicked" Style="{StaticResource Login}"/>
