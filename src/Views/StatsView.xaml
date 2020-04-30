@@ -4,8 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WorkHoursTracker.Views"
+             xmlns:models="clr-namespace:WorkHoursTracker.DataModels"
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
+            <UserControl.Resources>
+                <DataTemplate DataType="{x:Type models:TimeModelObject}">
+                </DataTemplate>
+            </UserControl.Resources>
             <Grid Background="LightGray">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100*"/>
@@ -37,11 +42,11 @@
                 <Rectangle HorizontalAlignment="Left" Height="40" Margin="40,0,0,0" Fill="White" VerticalAlignment="Center" Width="40" Grid.Row="1"/>
                 <Rectangle HorizontalAlignment="Left" Height="40" Margin="40,0,0,0" Fill="White" VerticalAlignment="Center" Width="40" Grid.Column="1" Grid.Row="1"/>
                
-                <Label Content="This week" FontSize="18" HorizontalAlignment="Left" Foreground="White" Margin="80,15,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
-                <Label Content="This month" FontSize="18" HorizontalAlignment="Left" Foreground="White" Margin="80,15,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Grid.Row="1"/>
+                <Label Content="This month" FontSize="18" HorizontalAlignment="Left" Foreground="White" Margin="80,15,0,0" VerticalAlignment="Top" Width="100" Grid.Row="1"/>
+                <Label Content="This year" FontSize="18" HorizontalAlignment="Left" Foreground="White" Margin="80,15,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1" Grid.Row="1"/>
               
-                <TextBlock HorizontalAlignment="Left" FontSize="18" Foreground="White" Margin="85,40,0,0" Text="5:56:00 h" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Grid.Row="1"/>
-                <TextBlock HorizontalAlignment="Left" FontSize="18" Foreground="White" Margin="85,40,0,0" Text="32:56:00 h" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Grid.Column="1" Grid.Row="1"/>
+                <TextBlock x:Name="ThisMonthTime" HorizontalAlignment="Left" FontSize="18" Foreground="White" Margin="85,40,0,0" Text="{Binding MonthTime}" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Grid.Row="1"/>
+                <TextBlock x:Name="ThisYearTime" HorizontalAlignment="Left" FontSize="18" Foreground="White" Margin="85,40,0,0" Text="{Binding YearTime}" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" Grid.Column="1" Grid.Row="1"/>
 
                 <Label HorizontalAlignment="Left" Margin="40,7,0,0" Content="Dashboard" FontSize="20" VerticalAlignment="Top"/>
                
