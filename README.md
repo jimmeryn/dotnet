@@ -1,5 +1,7 @@
 # Work time tracker
 
+App written in C#.Net with WPF using Oracle database. Providing my implementation of basic work time tracker used in most of companies.
+
 ## Setup
 
 ### Clone the repo
@@ -43,7 +45,7 @@ dotnet run
 Create new migration:
 
 ```sh
-dotnet ef migrations add <migratin_name>
+dotnet ef migrations add <migration_name>
 ```
 
 Apply it to database:
@@ -57,3 +59,7 @@ dotnet ef database update
 ```sh
 dotnet test
 ```
+
+### Documentation
+
+Navigate to doc/\_site/doc/api/toc.html to see generated documentation.
