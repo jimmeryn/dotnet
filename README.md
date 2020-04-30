@@ -62,4 +62,8 @@ dotnet test
 
 ### Documentation
 
-Navigate to doc/\_site/doc/api/toc.html to see generated documentation.
+To see generated documentation navigate to
+
+```sh
+doc/\_site/doc/api/toc.html
+```
