@@ -35,10 +35,7 @@ namespace WorkHoursTracker
       try
       {
         if (connection.State == ConnectionState.Closed)
-        {
           connection.Open();
-
-        }
       }
       catch (Exception ex)
       {
