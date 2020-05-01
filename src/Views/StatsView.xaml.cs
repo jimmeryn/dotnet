@@ -90,7 +90,9 @@ namespace WorkHoursTracker.Views
             .Where(time => time.StartDate.Year == DateTime.Now.Year && time.StartDate.Month == month)
           // summ all durations (difference between startDate and stopDate)
           .Select(time =>
-            time.EndDate.Subtract(time.StartDate)).Sum(r => r.Ticks));
+            time.EndDate.Subtract(time.StartDate))
+          .Sum(r => r.Ticks)
+        );
       }
     }
 

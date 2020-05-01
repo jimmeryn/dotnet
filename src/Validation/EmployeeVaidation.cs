@@ -23,10 +23,14 @@ namespace WorkHoursTracker
         stringValidator.Validate(surname);
         using (var db = new DataBaseContext())
         {
-          if (db.Employees.FirstOrDefault(user => user.Name == name && user.Surname == surname) == null)
-            return false;
-          else
+          if (db.Employees.FirstOrDefault(user =>
+          user.Name == name &&
+          user.Surname == surname) != null &&
+          Regex.IsMatch(name, @"^[a-zA-Z]+$") &&
+          Regex.IsMatch(surname, @"^[a-zA-Z]+$"))
             return true;
+          else
+            return false;
         }
       }
       catch (ArgumentException e)
