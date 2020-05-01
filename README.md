@@ -1,6 +1,6 @@
 # Work time tracker
 
-App written in C#.Net with WPF using Oracle database. Providing my implementation of basic work time tracker used in most of companies.
+App written in C#.Net with WPF using Oracle database. Providing my implementation of basic work time tracker used in most companies.
 
 ## Setup
 
@@ -20,7 +20,7 @@ cd dotnet
 
 ### Dependencies and tools
 
-Make sure you've installed dotnet and that you have Oracle Explorer connected to your database.
+Make sure you've installed dotnet and that you have Oracle Explorer connected to your Oracle database.
 
 ### Connect to database
 
@@ -42,6 +42,7 @@ dotnet run
 
 ### Adding migrations
 
+ORM created with EntityFrameworkCore.
 Create new migration:
 
 ```sh
@@ -54,7 +55,10 @@ Apply it to database:
 dotnet ef database update
 ```
 
-### Run unitests
+### Unit tests
+
+Unit tests were created with xUnit.
+To run unit tests:
 
 ```sh
 dotnet test
@@ -62,6 +66,7 @@ dotnet test
 
 ### Documentation
 
+Documentation written in XML was generated with Docfx.
 To see generated documentation navigate to
 
 ```sh
