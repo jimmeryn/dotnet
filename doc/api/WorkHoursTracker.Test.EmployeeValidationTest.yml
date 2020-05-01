@@ -1,0 +1,1044 @@
+### YamlMime:ManagedReference
+items:
+- uid: WorkHoursTracker.Test.EmployeeValidationTest
+  commentId: T:WorkHoursTracker.Test.EmployeeValidationTest
+  id: EmployeeValidationTest
+  parent: WorkHoursTracker.Test
+  children:
+  - WorkHoursTracker.Test.EmployeeValidationTest.NewValidate(System.String,System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings(System.String,System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings(System.String,System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings(System.String,System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings(System.String,System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(System.String,System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.Validate(System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings(System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings(System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings(System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings(System.String,System.String)
+  - WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: EmployeeValidationTest
+  nameWithType: EmployeeValidationTest
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest
+  type: Class
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: EmployeeValidationTest
+    path: tests/EmployeeValidation.test.cs
+    startLine: 11
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nEmployeeValidation class tests\n"
+  example: []
+  syntax:
+    content: public class EmployeeValidationTest
+    content.vb: Public Class EmployeeValidationTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.Validate(System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.Validate(System.String,System.String)
+  id: Validate(System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: Validate(String, String)
+  nameWithType: EmployeeValidationTest.Validate(String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.Validate(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: Validate
+    path: tests/EmployeeValidation.test.cs
+    startLine: 17
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nValidate function without db connection\n<xref href=\"WorkHoursTracker.EmployeeValidation.Validate(System.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static bool Validate(string name, string surname)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Validate(name As String, surname As String) As Boolean
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.Validate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidate(System.String,System.String,System.String)
+  id: NewValidate(System.String,System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: NewValidate(String, String, String)
+  nameWithType: EmployeeValidationTest.NewValidate(String, String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: NewValidate
+    path: tests/EmployeeValidation.test.cs
+    startLine: 41
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  summary: "\nValidate new users function without db connection\n<xref href=\"WorkHoursTracker.EmployeeValidation.NewValidate(System.String%2cSystem.String%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static bool NewValidate(string name, string surname, string jobTitle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    - id: jobTitle
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function NewValidate(name As String, surname As String, jobTitle As String) As Boolean
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings(System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings(System.String,System.String)
+  id: ValidationTestShortStrings(System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: ValidationTestShortStrings(String, String)
+  nameWithType: EmployeeValidationTest.ValidationTestShortStrings(String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: ValidationTestShortStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 63
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"", ""})]
+
+      [InlineData(new object[]{"a", "a"})]
+
+      public void ValidationTestShortStrings(string name, string surname)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"", ""})>
+
+      <InlineData(New Object() {"a", "a"})>
+
+      Public Sub ValidationTestShortStrings(name As String, surname As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings(System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings(System.String,System.String)
+  id: ValidationTestLongStrings(System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: ValidationTestLongStrings(String, String)
+  nameWithType: EmployeeValidationTest.ValidationTestLongStrings(String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: ValidationTestLongStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 71
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"agdyafvsgdabkjhsgdjasbdgjagsjkhdgajksgdjkhagsdgsja", "Kowalski"})]
+
+      public void ValidationTestLongStrings(string name, string surname)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"agdyafvsgdabkjhsgdjasbdgjagsjkhdgajksgdjkhagsdgsja", "Kowalski"})>
+
+      Public Sub ValidationTestLongStrings(name As String, surname As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings(System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings(System.String,System.String)
+  id: ValidationTestPassingStrings(System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: ValidationTestPassingStrings(String, String)
+  nameWithType: EmployeeValidationTest.ValidationTestPassingStrings(String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: ValidationTestPassingStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 78
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"anna", "kowalska"})]
+
+      [InlineData(new object[]{"Jan", "Bobrowik"})]
+
+      [InlineData(new object[]{"Krzysztof", "Krawczyk"})]
+
+      public void ValidationTestPassingStrings(string name, string surname)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"anna", "kowalska"})>
+
+      <InlineData(New Object() {"Jan", "Bobrowik"})>
+
+      <InlineData(New Object() {"Krzysztof", "Krawczyk"})>
+
+      Public Sub ValidationTestPassingStrings(name As String, surname As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings(System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings(System.String,System.String)
+  id: ValidationTestNotCharsStrings(System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: ValidationTestNotCharsStrings(String, String)
+  nameWithType: EmployeeValidationTest.ValidationTestNotCharsStrings(String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: ValidationTestNotCharsStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 87
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"#$%#$%", "#$%#$%"})]
+
+      public void ValidationTestNotCharsStrings(string name, string surname)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"#$%#$%", "#$%#$%"})>
+
+      Public Sub ValidationTestNotCharsStrings(name As String, surname As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings(System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings(System.String,System.String)
+  id: ValidationTestSomeNotCharsStrings(System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: ValidationTestSomeNotCharsStrings(String, String)
+  nameWithType: EmployeeValidationTest.ValidationTestSomeNotCharsStrings(String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: ValidationTestSomeNotCharsStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 94
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"Jan", "Kowal$%ski"})]
+
+      public void ValidationTestSomeNotCharsStrings(string name, string surname)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"Jan", "Kowal$%ski"})>
+
+      Public Sub ValidationTestSomeNotCharsStrings(name As String, surname As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings(System.String,System.String,System.String)
+  id: NewValidationTestShortStrings(System.String,System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: NewValidationTestShortStrings(String, String, String)
+  nameWithType: EmployeeValidationTest.NewValidationTestShortStrings(String, String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: NewValidationTestShortStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 101
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"", "", ""})]
+
+      [InlineData(new object[]{"a", "a", "a"})]
+
+      public void NewValidationTestShortStrings(string name, string surname, string jobTitle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    - id: jobTitle
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"", "", ""})>
+
+      <InlineData(New Object() {"a", "a", "a"})>
+
+      Public Sub NewValidationTestShortStrings(name As String, surname As String, jobTitle As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings(System.String,System.String,System.String)
+  id: NewValidationTestLongStrings(System.String,System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: NewValidationTestLongStrings(String, String, String)
+  nameWithType: EmployeeValidationTest.NewValidationTestLongStrings(String, String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: NewValidationTestLongStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 109
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"agdyafvsgdabkjhsgdjasbdgjagsjkhdgajksgdjkhagsdgsja", "Kowalski", "asdashjdajsjdajhsgjd"})]
+
+      public void NewValidationTestLongStrings(string name, string surname, string jobTitle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    - id: jobTitle
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"agdyafvsgdabkjhsgdjasbdgjagsjkhdgajksgdjkhagsdgsja", "Kowalski", "asdashjdajsjdajhsgjd"})>
+
+      Public Sub NewValidationTestLongStrings(name As String, surname As String, jobTitle As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings(System.String,System.String,System.String)
+  id: NewValidationTestPassingStrings(System.String,System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: NewValidationTestPassingStrings(String, String, String)
+  nameWithType: EmployeeValidationTest.NewValidationTestPassingStrings(String, String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: NewValidationTestPassingStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 116
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"anna", "kowalska", "ITSpecialist"})]
+
+      [InlineData(new object[]{"Jan", "Bobrowik", "CEO"})]
+
+      [InlineData(new object[]{"Krzysztof", "Krawczyk", "Worker"})]
+
+      public void NewValidationTestPassingStrings(string name, string surname, string jobTitle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    - id: jobTitle
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"anna", "kowalska", "ITSpecialist"})>
+
+      <InlineData(New Object() {"Jan", "Bobrowik", "CEO"})>
+
+      <InlineData(New Object() {"Krzysztof", "Krawczyk", "Worker"})>
+
+      Public Sub NewValidationTestPassingStrings(name As String, surname As String, jobTitle As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings(System.String,System.String,System.String)
+  id: NewValidationTestNotCharsStrings(System.String,System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: NewValidationTestNotCharsStrings(String, String, String)
+  nameWithType: EmployeeValidationTest.NewValidationTestNotCharsStrings(String, String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: NewValidationTestNotCharsStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 125
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"#$%#$%", "#$%#$%", "#@$@#$"})]
+
+      public void NewValidationTestNotCharsStrings(string name, string surname, string jobTitle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    - id: jobTitle
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"#$%#$%", "#$%#$%", "#@$@#$"})>
+
+      Public Sub NewValidationTestNotCharsStrings(name As String, surname As String, jobTitle As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(System.String,System.String,System.String)
+  id: NewValidationTestSomeNotCharsStrings(System.String,System.String,System.String)
+  parent: WorkHoursTracker.Test.EmployeeValidationTest
+  langs:
+  - csharp
+  - vb
+  name: NewValidationTestSomeNotCharsStrings(String, String, String)
+  nameWithType: EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(String, String, String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: tests/EmployeeValidation.test.cs
+      branch: master
+      repo: git@github.com:jimmeryn/dotnet.git
+    id: NewValidationTestSomeNotCharsStrings
+    path: tests/EmployeeValidation.test.cs
+    startLine: 132
+  assemblies:
+  - WorkHoursTracker
+  namespace: WorkHoursTracker.Test
+  syntax:
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"Jan", "Kowal$%ski", "SD$ds"})]
+
+      public void NewValidationTestSomeNotCharsStrings(string name, string surname, string jobTitle)
+    parameters:
+    - id: name
+      type: System.String
+    - id: surname
+      type: System.String
+    - id: jobTitle
+      type: System.String
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"Jan", "Kowal$%ski", "SD$ds"})>
+
+      Public Sub NewValidationTestSomeNotCharsStrings(name As String, surname As String, jobTitle As String)
+  overload: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: WorkHoursTracker.Test
+  commentId: N:WorkHoursTracker.Test
+  name: WorkHoursTracker.Test
+  nameWithType: WorkHoursTracker.Test
+  fullName: WorkHoursTracker.Test
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
+  commentId: M:WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
+  isExternal: true
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.Validate*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.Validate
+  name: Validate
+  nameWithType: EmployeeValidationTest.Validate
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.Validate
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
+  commentId: M:WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
+  isExternal: true
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidate
+  name: NewValidate
+  nameWithType: EmployeeValidationTest.NewValidate
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings
+  name: ValidationTestShortStrings
+  nameWithType: EmployeeValidationTest.ValidationTestShortStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings
+  name: ValidationTestLongStrings
+  nameWithType: EmployeeValidationTest.ValidationTestLongStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings
+  name: ValidationTestPassingStrings
+  nameWithType: EmployeeValidationTest.ValidationTestPassingStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings
+  name: ValidationTestNotCharsStrings
+  nameWithType: EmployeeValidationTest.ValidationTestNotCharsStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings
+  name: ValidationTestSomeNotCharsStrings
+  nameWithType: EmployeeValidationTest.ValidationTestSomeNotCharsStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings
+  name: NewValidationTestShortStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestShortStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings
+  name: NewValidationTestLongStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestLongStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings
+  name: NewValidationTestPassingStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestPassingStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings
+  name: NewValidationTestNotCharsStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestNotCharsStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings*
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings
+  name: NewValidationTestSomeNotCharsStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestSomeNotCharsStrings
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings

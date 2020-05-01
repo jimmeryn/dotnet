@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/api/WorkHoursTracker.Connection.html",
-          "hash": "UJgGRDZTmzvx8riiVTs9ug=="
+          "hash": "zYAvtXKrhaecF1LSWteE4w=="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/api/WorkHoursTracker.EmployeeValidation.html",
-          "hash": "v7p3RvxdxPCKsULLHAqqjg=="
+          "hash": "WR09efXakmXD+p1aVicK5Q=="
         }
       },
       "is_incremental": true,
@@ -233,11 +233,35 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "doc/api/WorkHoursTracker.Test.DataTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "doc/api/WorkHoursTracker.Test.DataTest.html",
+          "hash": "Kxa7KEvRmysBmpz8H8Akmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "doc/api/WorkHoursTracker.Test.EmployeeTest.yml",
       "output": {
         ".html": {
           "relative_path": "doc/api/WorkHoursTracker.Test.EmployeeTest.html",
-          "hash": "153QDgfokjKTA7uXDL2dHw=="
+          "hash": "gZovvInKrywCw8Lnu10YtA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "doc/api/WorkHoursTracker.Test.EmployeeValidationTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html",
+          "hash": "j3AA8jdfBR+RS0FtJ7IQ6w=="
         }
       },
       "is_incremental": true,
@@ -249,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/api/WorkHoursTracker.Test.Stats.html",
-          "hash": "BE8O17f/Suwpj77fMuzRoA=="
+          "hash": "A2raDjUjiuaQBA8PrkLoLA=="
         }
       },
       "is_incremental": true,
@@ -261,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/api/WorkHoursTracker.Test.html",
-          "hash": "Fqhj3vt8hDqcYyGEO38vKw=="
+          "hash": "FYKTDdEdPJ1yjlA5m+8Vqg=="
         }
       },
       "is_incremental": true,
@@ -345,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/api/WorkHoursTracker.Views.StatsView.html",
-          "hash": "0DPrZM+u8m5EEw2e7UUlAQ=="
+          "hash": "85UowHJs7vCi0U6VQPlE3w=="
         }
       },
       "is_incremental": true,
@@ -381,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "doc/api/toc.html",
-          "hash": "SfIluY9IFVeX3tdDbKyndw=="
+          "hash": "X/GP61knXusxpk+rMJ/A9A=="
         }
       },
       "is_incremental": false,
@@ -400,8 +424,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 31,
-          "skipped_file_count": 31
+          "total_file_count": 33,
+          "skipped_file_count": 33
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

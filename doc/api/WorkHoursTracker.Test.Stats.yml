@@ -5,10 +5,9 @@ items:
   id: Stats
   parent: WorkHoursTracker.Test
   children:
-  - WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
-  - WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-  - WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-  - WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
+  - WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+  - WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+  - WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
   langs:
   - csharp
   - vb
@@ -23,11 +22,11 @@ items:
       repo: git@github.com:jimmeryn/dotnet.git
     id: Stats
     path: tests/Stats.test.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - WorkHoursTracker
   namespace: WorkHoursTracker.Test
-  summary: "\nEmployee class tests\n"
+  summary: "\nStats class tests\n<xref href=\"WorkHoursTracker.Views.StatsView\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
   syntax:
     content: public class Stats
@@ -48,40 +47,38 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-  id: TimeSpanToHoursTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+  id: TimeSpanToHoursBasicTest
   parent: WorkHoursTracker.Test.Stats
   langs:
   - csharp
   - vb
-  name: TimeSpanToHoursTest()
-  nameWithType: Stats.TimeSpanToHoursTest()
-  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest()
+  name: TimeSpanToHoursBasicTest()
+  nameWithType: Stats.TimeSpanToHoursBasicTest()
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest()
   type: Method
   source:
     remote:
       path: tests/Stats.test.cs
       branch: master
       repo: git@github.com:jimmeryn/dotnet.git
-    id: TimeSpanToHoursTest
+    id: TimeSpanToHoursBasicTest
     path: tests/Stats.test.cs
-    startLine: 30
+    startLine: 46
   assemblies:
   - WorkHoursTracker
   namespace: WorkHoursTracker.Test
-  summary: "\nTimeSpanToHours basic test\n"
-  example: []
   syntax:
     content: >-
       [Fact]
 
-      public void TimeSpanToHoursTest()
+      public void TimeSpanToHoursBasicTest()
     content.vb: >-
       <Fact>
 
-      Public Sub TimeSpanToHoursTest
-  overload: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest*
+      Public Sub TimeSpanToHoursBasicTest
+  overload: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest*
   attributes:
   - type: Xunit.FactAttribute
     ctor: Xunit.FactAttribute.#ctor
@@ -90,40 +87,38 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-  id: GetCurrentUserTimeTypeTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+  id: TimeSpanToHoursBasicZeroTest
   parent: WorkHoursTracker.Test.Stats
   langs:
   - csharp
   - vb
-  name: GetCurrentUserTimeTypeTest()
-  nameWithType: Stats.GetCurrentUserTimeTypeTest()
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest()
+  name: TimeSpanToHoursBasicZeroTest()
+  nameWithType: Stats.TimeSpanToHoursBasicZeroTest()
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest()
   type: Method
   source:
     remote:
       path: tests/Stats.test.cs
       branch: master
       repo: git@github.com:jimmeryn/dotnet.git
-    id: GetCurrentUserTimeTypeTest
+    id: TimeSpanToHoursBasicZeroTest
     path: tests/Stats.test.cs
-    startLine: 39
+    startLine: 53
   assemblies:
   - WorkHoursTracker
   namespace: WorkHoursTracker.Test
-  summary: "\nGetCurrentUserTime basic return type test\n"
-  example: []
   syntax:
     content: >-
       [Fact]
 
-      public void GetCurrentUserTimeTypeTest()
+      public void TimeSpanToHoursBasicZeroTest()
     content.vb: >-
       <Fact>
 
-      Public Sub GetCurrentUserTimeTypeTest
-  overload: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest*
+      Public Sub TimeSpanToHoursBasicZeroTest
+  overload: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest*
   attributes:
   - type: Xunit.FactAttribute
     ctor: Xunit.FactAttribute.#ctor
@@ -132,82 +127,38 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-  id: GetCurrentUserTimeTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
+  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
+  id: TimeSpanToStringBasicTest
   parent: WorkHoursTracker.Test.Stats
   langs:
   - csharp
   - vb
-  name: GetCurrentUserTimeTest()
-  nameWithType: Stats.GetCurrentUserTimeTest()
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest()
+  name: TimeSpanToStringBasicTest()
+  nameWithType: Stats.TimeSpanToStringBasicTest()
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest()
   type: Method
   source:
     remote:
       path: tests/Stats.test.cs
       branch: master
       repo: git@github.com:jimmeryn/dotnet.git
-    id: GetCurrentUserTimeTest
+    id: TimeSpanToStringBasicTest
     path: tests/Stats.test.cs
-    startLine: 48
+    startLine: 60
   assemblies:
   - WorkHoursTracker
   namespace: WorkHoursTracker.Test
-  summary: "\nGetCurrentUserTime basic return type test\n"
-  example: []
   syntax:
     content: >-
       [Fact]
 
-      public void GetCurrentUserTimeTest()
+      public void TimeSpanToStringBasicTest()
     content.vb: >-
       <Fact>
 
-      Public Sub GetCurrentUserTimeTest
-  overload: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest*
-  attributes:
-  - type: Xunit.FactAttribute
-    ctor: Xunit.FactAttribute.#ctor
-    arguments: []
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
-  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
-  id: GetCurrentMonthTimeTest
-  parent: WorkHoursTracker.Test.Stats
-  langs:
-  - csharp
-  - vb
-  name: GetCurrentMonthTimeTest()
-  nameWithType: Stats.GetCurrentMonthTimeTest()
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest()
-  type: Method
-  source:
-    remote:
-      path: tests/Stats.test.cs
-      branch: master
-      repo: git@github.com:jimmeryn/dotnet.git
-    id: GetCurrentMonthTimeTest
-    path: tests/Stats.test.cs
-    startLine: 59
-  assemblies:
-  - WorkHoursTracker
-  namespace: WorkHoursTracker.Test
-  summary: "\nGetCurrentUserTime basic return type test\n"
-  example: []
-  syntax:
-    content: >-
-      [Fact]
-
-      public void GetCurrentMonthTimeTest()
-    content.vb: >-
-      <Fact>
-
-      Public Sub GetCurrentMonthTimeTest
-  overload: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest*
+      Public Sub TimeSpanToStringBasicTest
+  overload: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest*
   attributes:
   - type: Xunit.FactAttribute
     ctor: Xunit.FactAttribute.#ctor
@@ -217,6 +168,11 @@ items:
   modifiers.vb:
   - Public
 references:
+- uid: WorkHoursTracker.Views.StatsView
+  commentId: T:WorkHoursTracker.Views.StatsView
+  name: StatsView
+  nameWithType: StatsView
+  fullName: WorkHoursTracker.Views.StatsView
 - uid: WorkHoursTracker.Test
   commentId: N:WorkHoursTracker.Test
   name: WorkHoursTracker.Test
@@ -514,23 +470,18 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest*
-  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-  name: TimeSpanToHoursTest
-  nameWithType: Stats.TimeSpanToHoursTest
-  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest*
-  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-  name: GetCurrentUserTimeTypeTest
-  nameWithType: Stats.GetCurrentUserTimeTypeTest
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest*
-  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-  name: GetCurrentUserTimeTest
-  nameWithType: Stats.GetCurrentUserTimeTest
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-- uid: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest*
-  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
-  name: GetCurrentMonthTimeTest
-  nameWithType: Stats.GetCurrentMonthTimeTest
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest*
+  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+  name: TimeSpanToHoursBasicTest
+  nameWithType: Stats.TimeSpanToHoursBasicTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest*
+  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+  name: TimeSpanToHoursBasicZeroTest
+  nameWithType: Stats.TimeSpanToHoursBasicZeroTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest*
+  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
+  name: TimeSpanToStringBasicTest
+  nameWithType: Stats.TimeSpanToStringBasicTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest

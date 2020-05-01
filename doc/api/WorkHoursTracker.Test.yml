@@ -4,7 +4,9 @@ items:
   commentId: N:WorkHoursTracker.Test
   id: WorkHoursTracker.Test
   children:
+  - WorkHoursTracker.Test.DataTest
   - WorkHoursTracker.Test.EmployeeTest
+  - WorkHoursTracker.Test.EmployeeValidationTest
   - WorkHoursTracker.Test.Stats
   langs:
   - csharp
@@ -16,11 +18,21 @@ items:
   assemblies:
   - WorkHoursTracker
 references:
+- uid: WorkHoursTracker.Test.DataTest
+  commentId: T:WorkHoursTracker.Test.DataTest
+  name: DataTest
+  nameWithType: DataTest
+  fullName: WorkHoursTracker.Test.DataTest
 - uid: WorkHoursTracker.Test.EmployeeTest
   commentId: T:WorkHoursTracker.Test.EmployeeTest
   name: EmployeeTest
   nameWithType: EmployeeTest
   fullName: WorkHoursTracker.Test.EmployeeTest
+- uid: WorkHoursTracker.Test.EmployeeValidationTest
+  commentId: T:WorkHoursTracker.Test.EmployeeValidationTest
+  name: EmployeeValidationTest
+  nameWithType: EmployeeValidationTest
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest
 - uid: WorkHoursTracker.Test.Stats
   commentId: T:WorkHoursTracker.Test.Stats
   name: Stats

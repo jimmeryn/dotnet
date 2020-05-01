@@ -19,7 +19,7 @@ items:
       repo: git@github.com:jimmeryn/dotnet.git
     id: EmployeeTest
     path: tests/Employee.test.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - WorkHoursTracker
   namespace: WorkHoursTracker.Test

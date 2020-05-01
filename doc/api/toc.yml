@@ -48,8 +48,12 @@
 - uid: WorkHoursTracker.Test
   name: WorkHoursTracker.Test
   items:
+  - uid: WorkHoursTracker.Test.DataTest
+    name: DataTest
   - uid: WorkHoursTracker.Test.EmployeeTest
     name: EmployeeTest
+  - uid: WorkHoursTracker.Test.EmployeeValidationTest
+    name: EmployeeValidationTest
   - uid: WorkHoursTracker.Test.Stats
     name: Stats
 - uid: WorkHoursTracker.ViewModels

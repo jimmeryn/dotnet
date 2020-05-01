@@ -96,7 +96,7 @@ items:
       repo: git@github.com:jimmeryn/dotnet.git
     id: Finalize
     path: src/Database/Connection.cs
-    startLine: 67
+    startLine: 64
   assemblies:
   - WorkHoursTracker
   namespace: WorkHoursTracker

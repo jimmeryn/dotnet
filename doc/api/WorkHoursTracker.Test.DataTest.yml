@@ -1,35 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: WorkHoursTracker.EmployeeValidation
-  commentId: T:WorkHoursTracker.EmployeeValidation
-  id: EmployeeValidation
-  parent: WorkHoursTracker
+- uid: WorkHoursTracker.Test.DataTest
+  commentId: T:WorkHoursTracker.Test.DataTest
+  id: DataTest
+  parent: WorkHoursTracker.Test
   children:
-  - WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
-  - WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
+  - WorkHoursTracker.Test.DataTest.InitialDataTypeTest(System.String)
   langs:
   - csharp
   - vb
-  name: EmployeeValidation
-  nameWithType: EmployeeValidation
-  fullName: WorkHoursTracker.EmployeeValidation
+  name: DataTest
+  nameWithType: DataTest
+  fullName: WorkHoursTracker.Test.DataTest
   type: Class
   source:
     remote:
-      path: src/Validation/EmployeeVaidation.cs
+      path: tests/Data.test.cs
       branch: master
       repo: git@github.com:jimmeryn/dotnet.git
-    id: EmployeeValidation
-    path: src/Validation/EmployeeVaidation.cs
-    startLine: 11
+    id: DataTest
+    path: tests/Data.test.cs
+    startLine: 7
   assemblies:
   - WorkHoursTracker
-  namespace: WorkHoursTracker
-  summary: "\nEmployee validation class\n"
-  example: []
+  namespace: WorkHoursTracker.Test
   syntax:
-    content: public static class EmployeeValidation
-    content.vb: Public Module EmployeeValidation
+    content: public class DataTest
+    content.vb: Public Class DataTest
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,101 +39,63 @@ items:
   - System.Object.ToString
   modifiers.csharp:
   - public
-  - static
   - class
   modifiers.vb:
   - Public
-  - Module
-- uid: WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
-  commentId: M:WorkHoursTracker.EmployeeValidation.Validate(System.String,System.String)
-  id: Validate(System.String,System.String)
-  parent: WorkHoursTracker.EmployeeValidation
+  - Class
+- uid: WorkHoursTracker.Test.DataTest.InitialDataTypeTest(System.String)
+  commentId: M:WorkHoursTracker.Test.DataTest.InitialDataTypeTest(System.String)
+  id: InitialDataTypeTest(System.String)
+  parent: WorkHoursTracker.Test.DataTest
   langs:
   - csharp
   - vb
-  name: Validate(String, String)
-  nameWithType: EmployeeValidation.Validate(String, String)
-  fullName: WorkHoursTracker.EmployeeValidation.Validate(System.String, System.String)
+  name: InitialDataTypeTest(String)
+  nameWithType: DataTest.InitialDataTypeTest(String)
+  fullName: WorkHoursTracker.Test.DataTest.InitialDataTypeTest(System.String)
   type: Method
   source:
     remote:
-      path: src/Validation/EmployeeVaidation.cs
+      path: tests/Data.test.cs
       branch: master
       repo: git@github.com:jimmeryn/dotnet.git
-    id: Validate
-    path: src/Validation/EmployeeVaidation.cs
-    startLine: 16
+    id: InitialDataTypeTest
+    path: tests/Data.test.cs
+    startLine: 19
   assemblies:
   - WorkHoursTracker
-  namespace: WorkHoursTracker
-  summary: "\nEmployee data validation.false Used to log in.\n"
-  example: []
+  namespace: WorkHoursTracker.Test
   syntax:
-    content: public static bool Validate(string name, string surname)
+    content: >-
+      [Theory]
+
+      [InlineData(new object[]{"http://panamint.ict.pwr.wroc.pl/~wkrzesaj/dotnet_data/db.json"})]
+
+      public void InitialDataTypeTest(string url)
     parameters:
-    - id: name
+    - id: url
       type: System.String
-    - id: surname
-      type: System.String
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Function Validate(name As String, surname As String) As Boolean
-  overload: WorkHoursTracker.EmployeeValidation.Validate*
+    content.vb: >-
+      <Theory>
+
+      <InlineData(New Object() {"http://panamint.ict.pwr.wroc.pl/~wkrzesaj/dotnet_data/db.json"})>
+
+      Public Sub InitialDataTypeTest(url As String)
+  overload: WorkHoursTracker.Test.DataTest.InitialDataTypeTest*
+  attributes:
+  - type: Xunit.TheoryAttribute
+    ctor: Xunit.TheoryAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
-  - static
   modifiers.vb:
   - Public
-  - Shared
-- uid: WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
-  commentId: M:WorkHoursTracker.EmployeeValidation.NewValidate(System.String,System.String,System.String)
-  id: NewValidate(System.String,System.String,System.String)
-  parent: WorkHoursTracker.EmployeeValidation
-  langs:
-  - csharp
-  - vb
-  name: NewValidate(String, String, String)
-  nameWithType: EmployeeValidation.NewValidate(String, String, String)
-  fullName: WorkHoursTracker.EmployeeValidation.NewValidate(System.String, System.String, System.String)
-  type: Method
-  source:
-    remote:
-      path: src/Validation/EmployeeVaidation.cs
-      branch: master
-      repo: git@github.com:jimmeryn/dotnet.git
-    id: NewValidate
-    path: src/Validation/EmployeeVaidation.cs
-    startLine: 44
-  assemblies:
-  - WorkHoursTracker
-  namespace: WorkHoursTracker
-  summary: "\nValidate new employee data. Used to sing in.\n"
-  example: []
-  syntax:
-    content: public static bool NewValidate(string name, string surname, string jobTitle)
-    parameters:
-    - id: name
-      type: System.String
-    - id: surname
-      type: System.String
-    - id: jobTitle
-      type: System.String
-    return:
-      type: System.Boolean
-    content.vb: Public Shared Function NewValidate(name As String, surname As String, jobTitle As String) As Boolean
-  overload: WorkHoursTracker.EmployeeValidation.NewValidate*
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 references:
-- uid: WorkHoursTracker
-  commentId: N:WorkHoursTracker
-  name: WorkHoursTracker
-  nameWithType: WorkHoursTracker
-  fullName: WorkHoursTracker
+- uid: WorkHoursTracker.Test
+  commentId: N:WorkHoursTracker.Test
+  name: WorkHoursTracker.Test
+  nameWithType: WorkHoursTracker.Test
+  fullName: WorkHoursTracker.Test
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -429,11 +388,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: WorkHoursTracker.EmployeeValidation.Validate*
-  commentId: Overload:WorkHoursTracker.EmployeeValidation.Validate
-  name: Validate
-  nameWithType: EmployeeValidation.Validate
-  fullName: WorkHoursTracker.EmployeeValidation.Validate
+- uid: WorkHoursTracker.Test.DataTest.InitialDataTypeTest*
+  commentId: Overload:WorkHoursTracker.Test.DataTest.InitialDataTypeTest
+  name: InitialDataTypeTest
+  nameWithType: DataTest.InitialDataTypeTest
+  fullName: WorkHoursTracker.Test.DataTest.InitialDataTypeTest
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -441,15 +400,3 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  name: Boolean
-  nameWithType: Boolean
-  fullName: System.Boolean
-- uid: WorkHoursTracker.EmployeeValidation.NewValidate*
-  commentId: Overload:WorkHoursTracker.EmployeeValidation.NewValidate
-  name: NewValidate
-  nameWithType: EmployeeValidation.NewValidate
-  fullName: WorkHoursTracker.EmployeeValidation.NewValidate

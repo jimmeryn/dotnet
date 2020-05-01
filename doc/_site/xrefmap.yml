@@ -808,70 +808,238 @@ references:
   commentId: N:WorkHoursTracker.Test
   fullName: WorkHoursTracker.Test
   nameWithType: WorkHoursTracker.Test
+- uid: WorkHoursTracker.Test.DataTest
+  name: DataTest
+  href: doc/api/WorkHoursTracker.Test.DataTest.html
+  commentId: T:WorkHoursTracker.Test.DataTest
+  fullName: WorkHoursTracker.Test.DataTest
+  nameWithType: DataTest
+- uid: WorkHoursTracker.Test.DataTest.InitialDataTypeTest(System.String)
+  name: InitialDataTypeTest(String)
+  href: doc/api/WorkHoursTracker.Test.DataTest.html#WorkHoursTracker_Test_DataTest_InitialDataTypeTest_System_String_
+  commentId: M:WorkHoursTracker.Test.DataTest.InitialDataTypeTest(System.String)
+  fullName: WorkHoursTracker.Test.DataTest.InitialDataTypeTest(System.String)
+  nameWithType: DataTest.InitialDataTypeTest(String)
+- uid: WorkHoursTracker.Test.DataTest.InitialDataTypeTest*
+  name: InitialDataTypeTest
+  href: doc/api/WorkHoursTracker.Test.DataTest.html#WorkHoursTracker_Test_DataTest_InitialDataTypeTest_
+  commentId: Overload:WorkHoursTracker.Test.DataTest.InitialDataTypeTest
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.DataTest.InitialDataTypeTest
+  nameWithType: DataTest.InitialDataTypeTest
 - uid: WorkHoursTracker.Test.EmployeeTest
   name: EmployeeTest
   href: doc/api/WorkHoursTracker.Test.EmployeeTest.html
   commentId: T:WorkHoursTracker.Test.EmployeeTest
   fullName: WorkHoursTracker.Test.EmployeeTest
   nameWithType: EmployeeTest
+- uid: WorkHoursTracker.Test.EmployeeValidationTest
+  name: EmployeeValidationTest
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html
+  commentId: T:WorkHoursTracker.Test.EmployeeValidationTest
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest
+  nameWithType: EmployeeValidationTest
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate(System.String,System.String,System.String)
+  name: NewValidate(String, String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidate_System_String_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidate(System.String,System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate(System.String, System.String, System.String)
+  nameWithType: EmployeeValidationTest.NewValidate(String, String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate*
+  name: NewValidate
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidate_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidate
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidate
+  nameWithType: EmployeeValidationTest.NewValidate
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings(System.String,System.String,System.String)
+  name: NewValidationTestLongStrings(String, String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestLongStrings_System_String_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings(System.String,System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings(System.String, System.String, System.String)
+  nameWithType: EmployeeValidationTest.NewValidationTestLongStrings(String, String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings*
+  name: NewValidationTestLongStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestLongStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestLongStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestLongStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings(System.String,System.String,System.String)
+  name: NewValidationTestNotCharsStrings(String, String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestNotCharsStrings_System_String_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings(System.String,System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings(System.String, System.String, System.String)
+  nameWithType: EmployeeValidationTest.NewValidationTestNotCharsStrings(String, String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings*
+  name: NewValidationTestNotCharsStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestNotCharsStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestNotCharsStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestNotCharsStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings(System.String,System.String,System.String)
+  name: NewValidationTestPassingStrings(String, String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestPassingStrings_System_String_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings(System.String,System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings(System.String, System.String, System.String)
+  nameWithType: EmployeeValidationTest.NewValidationTestPassingStrings(String, String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings*
+  name: NewValidationTestPassingStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestPassingStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestPassingStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestPassingStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings(System.String,System.String,System.String)
+  name: NewValidationTestShortStrings(String, String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestShortStrings_System_String_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings(System.String,System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings(System.String, System.String, System.String)
+  nameWithType: EmployeeValidationTest.NewValidationTestShortStrings(String, String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings*
+  name: NewValidationTestShortStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestShortStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestShortStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestShortStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(System.String,System.String,System.String)
+  name: NewValidationTestSomeNotCharsStrings(String, String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestSomeNotCharsStrings_System_String_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(System.String,System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(System.String, System.String, System.String)
+  nameWithType: EmployeeValidationTest.NewValidationTestSomeNotCharsStrings(String, String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings*
+  name: NewValidationTestSomeNotCharsStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_NewValidationTestSomeNotCharsStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.NewValidationTestSomeNotCharsStrings
+  nameWithType: EmployeeValidationTest.NewValidationTestSomeNotCharsStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.Validate(System.String,System.String)
+  name: Validate(String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_Validate_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.Validate(System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.Validate(System.String, System.String)
+  nameWithType: EmployeeValidationTest.Validate(String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.Validate*
+  name: Validate
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_Validate_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.Validate
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.Validate
+  nameWithType: EmployeeValidationTest.Validate
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings(System.String,System.String)
+  name: ValidationTestLongStrings(String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestLongStrings_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings(System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings(System.String, System.String)
+  nameWithType: EmployeeValidationTest.ValidationTestLongStrings(String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings*
+  name: ValidationTestLongStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestLongStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestLongStrings
+  nameWithType: EmployeeValidationTest.ValidationTestLongStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings(System.String,System.String)
+  name: ValidationTestNotCharsStrings(String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestNotCharsStrings_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings(System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings(System.String, System.String)
+  nameWithType: EmployeeValidationTest.ValidationTestNotCharsStrings(String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings*
+  name: ValidationTestNotCharsStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestNotCharsStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestNotCharsStrings
+  nameWithType: EmployeeValidationTest.ValidationTestNotCharsStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings(System.String,System.String)
+  name: ValidationTestPassingStrings(String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestPassingStrings_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings(System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings(System.String, System.String)
+  nameWithType: EmployeeValidationTest.ValidationTestPassingStrings(String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings*
+  name: ValidationTestPassingStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestPassingStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestPassingStrings
+  nameWithType: EmployeeValidationTest.ValidationTestPassingStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings(System.String,System.String)
+  name: ValidationTestShortStrings(String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestShortStrings_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings(System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings(System.String, System.String)
+  nameWithType: EmployeeValidationTest.ValidationTestShortStrings(String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings*
+  name: ValidationTestShortStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestShortStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestShortStrings
+  nameWithType: EmployeeValidationTest.ValidationTestShortStrings
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings(System.String,System.String)
+  name: ValidationTestSomeNotCharsStrings(String, String)
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestSomeNotCharsStrings_System_String_System_String_
+  commentId: M:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings(System.String,System.String)
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings(System.String, System.String)
+  nameWithType: EmployeeValidationTest.ValidationTestSomeNotCharsStrings(String, String)
+- uid: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings*
+  name: ValidationTestSomeNotCharsStrings
+  href: doc/api/WorkHoursTracker.Test.EmployeeValidationTest.html#WorkHoursTracker_Test_EmployeeValidationTest_ValidationTestSomeNotCharsStrings_
+  commentId: Overload:WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings
+  isSpec: "True"
+  fullName: WorkHoursTracker.Test.EmployeeValidationTest.ValidationTestSomeNotCharsStrings
+  nameWithType: EmployeeValidationTest.ValidationTestSomeNotCharsStrings
 - uid: WorkHoursTracker.Test.Stats
   name: Stats
   href: doc/api/WorkHoursTracker.Test.Stats.html
   commentId: T:WorkHoursTracker.Test.Stats
   fullName: WorkHoursTracker.Test.Stats
   nameWithType: Stats
-- uid: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
-  name: GetCurrentMonthTimeTest()
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_GetCurrentMonthTimeTest
-  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest()
-  nameWithType: Stats.GetCurrentMonthTimeTest()
-- uid: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest*
-  name: GetCurrentMonthTimeTest
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_GetCurrentMonthTimeTest_
-  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+  name: TimeSpanToHoursBasicTest()
+  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToHoursBasicTest
+  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest()
+  nameWithType: Stats.TimeSpanToHoursBasicTest()
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest*
+  name: TimeSpanToHoursBasicTest
+  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToHoursBasicTest_
+  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
   isSpec: "True"
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentMonthTimeTest
-  nameWithType: Stats.GetCurrentMonthTimeTest
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-  name: GetCurrentUserTimeTest()
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_GetCurrentUserTimeTest
-  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest()
-  nameWithType: Stats.GetCurrentUserTimeTest()
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest*
-  name: GetCurrentUserTimeTest
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_GetCurrentUserTimeTest_
-  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicTest
+  nameWithType: Stats.TimeSpanToHoursBasicTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+  name: TimeSpanToHoursBasicZeroTest()
+  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToHoursBasicZeroTest
+  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest()
+  nameWithType: Stats.TimeSpanToHoursBasicZeroTest()
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest*
+  name: TimeSpanToHoursBasicZeroTest
+  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToHoursBasicZeroTest_
+  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
   isSpec: "True"
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTest
-  nameWithType: Stats.GetCurrentUserTimeTest
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-  name: GetCurrentUserTimeTypeTest()
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_GetCurrentUserTimeTypeTest
-  commentId: M:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest()
-  nameWithType: Stats.GetCurrentUserTimeTypeTest()
-- uid: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest*
-  name: GetCurrentUserTimeTypeTest
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_GetCurrentUserTimeTypeTest_
-  commentId: Overload:WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursBasicZeroTest
+  nameWithType: Stats.TimeSpanToHoursBasicZeroTest
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
+  name: TimeSpanToStringBasicTest()
+  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToStringBasicTest
+  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest()
+  nameWithType: Stats.TimeSpanToStringBasicTest()
+- uid: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest*
+  name: TimeSpanToStringBasicTest
+  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToStringBasicTest_
+  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
   isSpec: "True"
-  fullName: WorkHoursTracker.Test.Stats.GetCurrentUserTimeTypeTest
-  nameWithType: Stats.GetCurrentUserTimeTypeTest
-- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-  name: TimeSpanToHoursTest()
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToHoursTest
-  commentId: M:WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest()
-  nameWithType: Stats.TimeSpanToHoursTest()
-- uid: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest*
-  name: TimeSpanToHoursTest
-  href: doc/api/WorkHoursTracker.Test.Stats.html#WorkHoursTracker_Test_Stats_TimeSpanToHoursTest_
-  commentId: Overload:WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-  isSpec: "True"
-  fullName: WorkHoursTracker.Test.Stats.TimeSpanToHoursTest
-  nameWithType: Stats.TimeSpanToHoursTest
+  fullName: WorkHoursTracker.Test.Stats.TimeSpanToStringBasicTest
+  nameWithType: Stats.TimeSpanToStringBasicTest
 - uid: WorkHoursTracker.ViewModels
   name: WorkHoursTracker.ViewModels
   href: doc/api/WorkHoursTracker.ViewModels.html

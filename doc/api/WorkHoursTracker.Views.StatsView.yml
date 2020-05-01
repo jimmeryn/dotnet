@@ -884,7 +884,7 @@ items:
       repo: git@github.com:jimmeryn/dotnet.git
     id: CalculateYearTime
     path: src/Views/StatsView.xaml.cs
-    startLine: 99
+    startLine: 101
   assemblies:
   - WorkHoursTracker
   namespace: WorkHoursTracker.Views
